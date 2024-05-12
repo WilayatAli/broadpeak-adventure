@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #004b91;
+    --red:#f9556d;
+    --green:#00AB33;
+    --drakblue: #09233b;
+    --btn-color:#FFBA08;
+    --box-color:#f2d19050;
+}
+
+.aboutUsBanner{
+    background-image: url(/assests/bannersImage/aboutUsbanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 290px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutUsContent h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--red) !important;
+    margin-block: 12px;
+}
+.aboutUsBanner h2{
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 28px;
+    color: var(--red);
+    font-family: "montserrat", sans-serif;
+    background-color: #cccccc5a;
+    padding: 17px;
+    border-radius: 12px;
+}
+.aboutUsContentWrapper{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-inline: 20px;
+    margin-top: 30px;
+}
+.aboutUsContent{
+    width: 100%;
+    max-width: 60%;
+}
+.aboutUsSubContainer{
+    width: 100%;
+    max-width: 1160px;
+    margin-inline: auto;
+    background-color: #fff;
+}
+.aboutUsContent{
+    padding-inline: 10px;
+    padding-block: 30px;
+}
+.aboutUsRightside{
+    width: 100%;
+    max-width: 40%;
+    padding-inline: 10px;
+    padding-block: 30px;
+}
+.aboutUstextwrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.aboutUsTextBox{
+    width: 100%;
+    max-width: 300px;
+    padding: 30px 20px;
+    background-color: var(--box-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 4px;
+}
+.aboutUsUnderLine{
+    width: 40px;
+    height: 3px;
+    background-color: var(--red);
+    position: relative;
+    top: -23px;
+    left: 3px;
+}
+.aboutUsTextBox h5{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "montserrat", sans-serif;
+    color: #09233b;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.aboutUsul{
+    margin-top: 20px;
+}
+.aboutUsul p{
+    margin-bottom: 12px;
+}
+.aboutUsGhatheringMoments h2{
+    margin-top: 30px !important;
+    margin-bottom: 3px !important;
+}
+.aboutUsGhatheringMoments{
+    margin-top: 20px;
+}
+.aboutUsul span{
+    font-weight: bold;
+}
+.aboutUStrustedBy{
+    margin-top: 30px;
+    padding-bottom: 60px;
+   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutUsContentWrapper{
+        flex-direction: column;
+    }
+    .aboutUsContent{
+        max-width: 100%;
+    }
+
+    .aboutUsRightside {
+        max-width: 100%;
+    }
+    .aboutUsTextBox{
+        max-width: 100%;
+    }
+}

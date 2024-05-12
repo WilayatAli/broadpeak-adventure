@@ -1,0 +1,563 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root{
+   --blue: #004b91;
+   --red:#f9556d;
+   --green:#00AB33;
+}
+/* Slider container */
+/* Slider container */
+.slider-container {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+ }
+.sideLinksSlider{
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   position: absolute;
+   top: 20%;
+   transform: translateY(-50%);
+   border: none;
+   color: #01358d;
+   font-size: 30px;
+   font-weight: bolder;
+   padding: 4px 10px;
+   cursor: pointer;
+   transition: right 2s ease;
+   right: -15px;
+   display: flex;
+   align-items: center;
+
+}
+.tapOneLink{
+   position: relative;
+   right: -142px;
+   transition: right 2s ease;
+   padding-left: 10px;
+   display: flex;
+   font-size: 11px;
+   gap: 8px;
+}
+.tapOneLink:hover{
+   right: 0;
+}
+.tapOneLink{
+   width: 190px;
+   height: 48px;
+   background-color: #ff8c00fe;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+}
+.tapOneLink a{
+   padding-left: 10px;
+   text-decoration: none;
+   font-size: 11px;
+   color: var(--blue);
+   font-family: "montserrat", sans-serif !important;
+}
+.tapOneLink a:hover{
+   color: #fff;
+}
+.tapOneLink img{
+   width: 25px;
+}
+/* Slider */
+.slider {
+   display: flex;
+   align-items: center;
+}
+
+/* Individual slide */
+.slide {
+ flex: 0 0 100%;
+   width: 100%; /* Each slide takes up full width */
+   height: 500px; /* Adjust height as needed */
+   background-size: cover; /* Ensure the image covers the entire slide */
+   background-position: center; /* Center the image within the slide */
+}
+
+
+/* Previous and Next buttons */
+.prev-btn,
+.next-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: rgba(0, 0, 0, 0.055);
+   border: none;
+   color: #01358d;
+   font-size: 30px;
+   font-weight: bolder;
+   padding: 4px 10px;
+   cursor: pointer;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-top: 1px solid #f9556d;
+   border-bottom: 1px solid #fff;
+}
+
+/* Position the previous button on the left */
+.prev-btn {
+   left: 10px;
+}
+
+/* Position the next button on the right */
+.next-btn {
+   right: 10px;
+}
+
+.sliderOneContaint{
+   padding-top: 150px !important;
+   margin-inline: auto;
+   display: flex;
+   flex-direction: column;
+}
+.sliderOneSlogan{
+   font-size: 55px;
+   font-weight: 900;
+   text-align: center;
+   color: #01358d ;
+   background-color: rgba(187, 189, 189, 0.529);
+   padding: 6px;
+   display: inline-flex;
+   justify-content: center;
+   margin-inline: auto;
+   border-top-right-radius: 18px;
+   border-bottom-left-radius: 18px;
+   font-family: "Audiowide", sans-serif !important;
+}
+.slide p{
+   font-size: 24px;
+   font-weight: 400;
+   text-align: center;
+   margin-inline: auto;
+   text-align: center;
+   color: white;
+   margin-top: 8px;
+   background-color: rgba(128, 128, 128, 0.559);
+   padding: 6px;
+   border-radius: 2px;
+}
+
+.sliderOneSlogan span{
+   color: #f9556d !important;
+   padding-left: 6px;
+}
+
+/* .sarchBarTwo{
+   margin-inline: auto !important;
+} */
+
+.search {
+   width: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .searchTerm {
+   width: 100%;
+   border: 2px solid #004b91;
+   border-right: none;
+   padding: 17px;
+   height: 22px;
+   border-radius: 45px 0 0 45px;
+   outline: none;
+   color: #000;
+   background-color: #dcdcdcd7;
+ }
+ 
+ .searchTerm:focus{
+   color: #000;
+ }
+ 
+ .searchButton {
+   width: 40px;
+   height: 37.5px;
+   border: none;
+   background: #004b91;
+   text-align: center;
+   color: #fff;
+   border-radius: 0 45px 45px 0;
+   cursor: pointer;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #004b91;
+   /* border: 2px solid #004b91; */
+ }
+ .searchButton svg{
+   width: 22px;
+ }
+ 
+ /*Resize the wrap to see the search bar change!*/
+ .wrap{
+   width: 30%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top: 60px !important;
+ }
+
+.sliderTwo{
+   background-color: transparent !important;
+   max-width: 600px !important;
+   font-size: 40px !important;
+}
+.partTwo{
+   font-size: 55px;
+   text-align: center;
+   margin-top: 4px;
+   color:#01358d;
+   font-family: "montserrat", sans-serif !important;
+
+}
+.sliderTop{
+   padding-top: 120px !important;
+}
+.slogans{
+   background-color: transparent !important;
+   font-family: "Audiowide", sans-serif !important;
+   color: #fff !important;
+}
+.slideBtnWrapper{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   gap: 6px;
+}
+
+.slidetextAnimation {
+   animation: zoomIn 2s; /* Duration of 2s */
+   animation-fill-mode: forwards;
+   opacity: 0; /* Initially set opacity to 0 */
+ }
+ 
+ @keyframes zoomIn {
+   0% {
+     opacity: 0; /* Start with opacity 0 */
+     transform: scale(0); /* Start with no scale (zoomed out) */
+   }
+   100% {
+     opacity: 1; /* Gradually increase opacity to 1 */
+     transform: scale(0.8); /* Scale to 1 (normal size) */
+   }
+ }
+ 
+ /* pakageCardCss Started*/
+.cardContainerOne{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.pakagesCardContainer{
+   margin-top: 40px;
+   width: 100%;
+   max-width: 1200px;
+   padding-inline: 20px;
+   margin-inline: auto;
+  
+}
+.packageCardHeading{
+   color: #000;
+   font-size: 26px;
+   padding: 35px 0 0 0px;
+   display: inline-block;
+   width: 100%;
+   font-weight: 700;
+   font-family: "Roboto Slab", serif !important;
+   border-top: 1px solid rgba(255, 255, 255, 0.7);
+   -webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+   -moz-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+.headingUnderLines{
+   width: 90px;
+   height: 3px;
+   background-color: #FFBA08;
+   margin-bottom: 35px;
+   /* margin-left: 40px; */
+}
+.cardwrapper{
+   width: 100%;
+   max-width: 277.5px;
+   height: auto;
+   background-color: #fff;
+   margin-bottom: 40px;
+   /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); */
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;  
+    overflow: hidden;
+   position: relative;
+   transition: .6s ease-in-out;
+   animation: scale 2s ease-in-out;
+
+}
+
+@keyframes scale{
+   0%{
+      scale: 0.8;
+   }
+   100%{
+      scale: 1;
+   }
+}
+
+.cardwrapper:hover{
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.imageContainer{
+   width: 100%;
+   max-width: 277.5px;
+   height: 200px;
+   overflow: hidden;
+}
+.cardImgFrame{
+   width: 100%;
+   height: 200px;
+   /* position: absolute;
+   top: 0;
+   left: 0; */
+   overflow: hidden;
+}
+
+
+.cardwrapper img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+}
+.cardwrapper img:hover{
+   transform: scale(1.1);
+}
+.cardContents{
+   position: relative;
+   padding: 13px 15px 15px;
+   /* margin-top: 210px; */
+}
+.cardheadings{
+   font-family: "Roboto Slab", serif !important;
+   font-size: 18px;
+   line-height: 19px;
+   color: #000;
+   
+}
+.cardHeadingtwo{
+   min-height: 38px;
+}
+.cardhrLine{
+   margin-top: 12px;
+}
+.cardParagraph{
+   font-family: "montserrat", sans-serif !important;
+   font-size: 12px;
+   line-height: 19.5px;
+   color: #454545;
+   margin-block: 12px;
+   min-height: 65px;
+}
+.cardParagraph a{
+   font-style: italic;
+   font-weight: 500;
+   color: var(--red);
+   padding-left: 3px;
+   text-decoration: none;
+   transition: all 0.4s ease;
+}
+.cardParagraph a:hover{
+   color: var(--blue);
+}
+
+.card-Book-btns{
+   background-color: #FFBA08;
+   border: none;
+   font-size: 12px;
+   color: white;
+   font-weight: 500;
+   width: 102.28px;
+   height: 32px;
+   cursor: pointer;
+   border-radius: 17px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-inline: auto;
+   margin-top: 15px;
+   text-decoration: none;
+   transition: 0.2s ease-in-out;
+}
+.card-Book-btns:hover{
+   background-color: var(--blue);
+}
+
+/* VahicalPrice section css started */
+.vehicalperDayPrice{
+   padding-block: 13px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+   margin-top: 13px;
+   font-family: "montserrat", sans-serif !important;
+}
+.vehicalperDayPrice h6{
+   font-size: 13px;
+   font-weight: 400;
+   color: #555555;
+}
+.vehicalperDayPrice p{
+   font-size: 13px;
+   font-weight: 800;
+   color: #555555;
+}
+
+.vehicalDetails{
+   margin-top: 12px;
+   margin-bottom: 15px;
+   border-bottom: 1px solid #ccc;
+}
+.vehicalProperties{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-block: 7px;
+   font-family: "montserrat", sans-serif !important;
+   color: #555555;
+}
+.vehicalProperties h6{
+   font-size: 13px;
+   font-weight: 500;
+   width: 55%;
+}
+.vehicalProperties p{
+   font-size: 13px;
+   font-weight: 300;
+   width: 45%;
+   text-align:end;
+}
+.customPadding{
+   margin-bottom: 12px !important;
+}
+
+/* whyChooseUS */
+
+.whyChooseUsSection{
+   margin-top: 40px;
+   width: 100%;
+   max-width: 1200px;
+   /* padding-inline: 20px; */
+   margin-inline: auto;
+   margin-top: 65px;
+   margin-bottom: 20px;
+}
+.widgetBoxWrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.widgetBox{
+   width: 100%;
+   max-width: 277.5px;
+   /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%); */
+   padding: 15px;
+   margin-bottom: 20px;
+   transform: 0.2s;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+   border-top-right-radius: 30px;
+   border-bottom-left-radius: 30px;
+   border-bottom: 1px solid goldenrod;
+}
+.widgetBox:hover{
+   box-shadow: rgba(169, 160, 160, 0.5) 1px 0px 4px 2px;
+}
+.widgetBox h4{
+   font-size: 17px;
+   padding-bottom: 13px;
+   margin-bottom: 14px;
+   border-bottom: 1px solid #ccc;
+   font-family: "Roboto Slab", serif !important;
+   color: #3F88C5;
+   font-weight: 700;
+   transform: 0.2s;
+}
+.widgetBox:hover h4 {
+   color: var(--blue);
+}
+
+.widgetBox p{
+   font-size: 13px !important;
+   font-family: "montserrat", sans-serif !important;
+   color: #454545;
+   padding-bottom: 20px;
+   line-height: 23px;
+   min-height: 98px;
+   min-height: 173px;
+   line-height: 20px;
+}
+.lineHr{
+   margin-top: 40px;
+}
+/* mediaQuery */
+/* @media only screen and (max-width: 1400px) {...} */
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 992px) {
+   .sliderOneSlogan{
+      flex-wrap: wrap;
+      text-align: center;
+   }
+   .wrap{
+     
+      margin-block: 40px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+   .wrap{
+      width: 40%;
+      margin-top: 80px !important;
+    }
+}
+@media only screen and (max-width: 680px) {
+   /* .sliderOneSlogan{
+      font-size: 30px;
+   } */
+   .prev-btn, .next-btn {
+      font-size: 15px;
+      padding: 5px 7px;
+  }
+  .sliderOneContaint {
+   padding-top: 121px !important;
+}
+.sliderOneSlogan {
+   font-size: 34px;
+   line-height: 38px;
+}
+.partTwo {
+   font-size: 35px;
+   margin-top: 6px;
+   color: #0e8b1e;
+}
+}
+@media only screen and (max-width: 576px) {
+   /* .sliderOneSlogan{
+      font-size: 20px;
+   } */
+   .wrap{
+      width: 80%;
+    }
+}

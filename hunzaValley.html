@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunza Valley Tour | BroadPeak Adventures</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => { // Ensure script runs after DOM is fully loaded
+      fetch('relatedPackage.html') // Fetch the content from the relatedPackage.html file
+        .then(response => response.text()) // Convert the response to text
+        .then(data => {
+          const relatedPlaceholder = document.getElementById('related-content-placeholder'); // Reference to the placeholder
+          relatedPlaceholder.insertAdjacentHTML('beforebegin', data); // Insert content before the footer
+        })
+        .catch(error => console.error('Error fetching related package:', error)); // Error handling
+    });
+  </script>
+        <div class="backGroundBanner"></div>
+        <div class="pkgDetailsContainer">
+            <h3 class="mainHeading k2trekking headingThreec">Hunza Valley</h3>
+            <div class="pkgDetailsSubContainer">
+            <div class="pkgDetailsWrapper">
+                <div class="pkgDetailsSlide">
+                    <div class="pkgDetailsSlideImage"  id="imageSlider">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/NangaParbat2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/nanga-parbat-baseCamp2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/Nangaparbat3.jpg" alt="">
+                    </div>
+                    <div class="pkgDetailsArrow">
+                        <img src="./assests/icons/arrowDoubleLeft.svg" alt="arrow">
+                        <img src="./assests/icons/arrowDoubleRight.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="pkgDetailsideCard">
+                    <h1 class="subHeadings packageText">Hunza Valley</h1>
+                    <p class="packageText daysPkg">7 Days</p>
+                    <hr class="hrliine">
+                    <div class="pakageInclusions sliderhidden">
+                        <ul class="smallHeadings topslide">
+                            <li><img src="./assests/pakageDetailIconAndImage/hotel.svg" alt="star hotel">
+                            ACCOMONDATION</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/car.svg" alt="transport">
+                            TRANSPORT</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/meal.svg" alt="meal">
+                            MEALS</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/guide.svg" alt="sightseeing">
+                            PROFFESIONAL GUIDES</li>
+                        </ul>
+                    </div>
+                    <hr class="hrliine">
+                    <div class="packageText">
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Country :</p>
+                            <span class="spanTag">Pakistan</span>
+                        </div>
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Area :</p>
+                            <span class="spanTag">Hunza Valley</span>
+                        </div>
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Tour Type :</p>
+                            <span class="spanTag">Trekking</span>
+                        </div>
+
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Duration :</p>
+                            <span class="spanTag">15 Days</span>
+                        </div>
+
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Best Season :</p>
+                            <span class="spanTag">Mid April- October</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pkgDetailsNAv"  id="stickyNav">
+                <ul class="navScroll">
+                    <li class="pkgnav-btn activeOverView"><a href="#overView">OverView</a></li>
+                    <!-- <li class="pkgnav-btn"><a href="#highlight">Highlights</a></li> -->
+                    <li class="pkgnav-btn"><a href="#itinerarys"> Itinerary</a></li>
+                    <li class="pkgnav-btn"><a href="#Includes">Inclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#Excludes">Exclusions</a></li>
+                    <!-- <li class="pkgnav-btn"><a href="#FAQz">FAQ,s</a></li> -->
+                </ul>
+            </div>
+            <div class="pagDetailsContents">
+                <div class="PkgContentsleft">
+                   <div class="pkgContentWrapper">
+                        <div class="pkgOverviewText" id="overView">
+                            <h5 class="contentHeadings">OverView</h5>
+                            <p class="packageText">Explore the captivating Hunza Valley in Pakistan, beginning in Islamabad and its iconic landmarks. Drive along the Karakoram Highway, stopping to admire Shatial Petroglyphs. In the heart of Hunza Valley, visit Baltit Fort, Altit Fort, and the serene Shishkin Garden. Explore local handicrafts at Karimabad Bazaar. Discover the striking Attabad Lake, and the picturesque Hussaini Suspension Bridge, and make an exhilarating day trip to Khunjerab Pass. Depending on the time, visit Naltar Valley before concluding your journey in Islamabad.
+                            </p>
+                        </div>
+                        <!-- <div class="pkgOverviewText highLight" id="highlight">
+                            <h5 class="contentHeadings">Highlights</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Trek to Rush Lake, one of the world's highest lakes, near the majestic Rush Pari peak.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Enjoy panoramic views of Nagar Valley's iconic peaks, including Spantik and Phuparash.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Marvel at the surrounding beauty, with glimpses of Hopper and Miar Glaciers.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Witness breathtaking vistas of the Karakoram Mountains, potentially including K2 Summit on clear days.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="pkgItinerarys" id="itinerarys">
+                            <h2 class="contentHeadings">Itinerary</h2>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                 <img src="./assests/icons/day.svg" alt="image">
+                                 <div>
+                                 <p class="ItineraryBold"><span>Day - 1: </span>Arrival in Islamabad</p>
+                                 <p  class="packageText">Your enchanting 7-day Hunza tour begins in Islamabad, Pakistan's capital.
+                                    Check into your accommodation and unwind after your journey.<br>
+                                    Time permitting, explore Islamabad's landmarks like Faisal Mosque, Daman-e-Koh, and Lok Virsa Museum.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 2: </span>Islamabad to Chilas</p>
+                                <p  class="packageText">Set out early on a picturesque drive along the world-renowned Karakoram Highway to Chilas. <br>Marvel at the awe-inspiring Shatial Petroglyphs and the convergence of the Karakoram, Himalayas, and Hindu Kush mountain ranges. <br>Rest and rejuvenate in Chilas for the night.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 3: </span>Chilas to Hunza Valley</p>
+                            <p  class="packageText">Continue your scenic journey along the Karakoram Highway, taking in the rugged beauty and iconic Nanga Parbat.<br> Arrive in the heart of Hunza Valley, Karimabad, and settle into your accommodation.
+                                Explore the historical gems of Baltit Fort and Baltit Village.
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 4: </span>Exploring Karimabad</p>
+                            <p  class="packageText">Immerse yourself in the charm of Hunza Valley. <br>Visit Altit Fort, stroll through Shishkin Garden, and shop for local crafts at Karimabad Bazaar. <br>As the day winds down, savor the awe-inspiring views of Rakaposhi and Ultar Sar mountains.</p>
+                        </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 5: </span>
+                                    Attabad Lake and Gojal Valley</p>
+                                <p  class="packageText">Venture to the mesmerizing Attabad Lake, known for its turquoise waters resulting from a 2010 landslide. <br>
+                                    Enjoy a boat ride on the lake to absorb its unique beauty. <br> Explore the picturesque Hussaini Suspension Bridge in Gojal Valley. <br>Return to Karimabad for a well-deserved rest.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 6: </span>Khunjerab Pass (Pak-China Border)</p>
+                                    <p  class="packageText">Embark on an epic day trip to Khunjerab Pass, marking the Pakistan-China border.
+                                        Traverse Khunjerab National Park, offering wildlife-spotting opportunities.
+                                        Gaze in wonder at Khunjerab Top, the highest point on the Karakoram Highway.
+                                        Return to Karimabad for an evening of relaxation.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day: 7: </span>
+                                    Departure to Islamabad</p>
+                                <p  class="packageText">Bid farewell to Karimabad and journey back to Chilas or Gilgit. <br> <br>
+                                    Conclude your unforgettable Hunza tour as you return to Islamabad, marking the end of this incredible journey.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Included/NotIncluded -->
+                        <div class="pkgOverviewText includeCustom" id="Includes">
+                            <h5 class="contentHeadings">What's Included:</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        All domestic flights and road transfers
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        All hotel accommodation (twin sharing room)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">All camping site and bridge fees</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Licensed professional guide (government requirement)</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        First aid medicine kit (basic)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pkgOverviewText includeCustom" id="Excludes">
+                            <h5 class="contentHeadings">What's Not Included</h5>
+                            <ul class="packageText">
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        International airfare and airport taxes.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Visa fee for Pakistan and personal insurance of the clients.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Tips for drivers, porters and staff
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Optional excursions or deviations from the scheduled tour
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Sleeping bag and all personal expenses such as telephone charges, liquor or soft drinks,
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Room service, gratuities for personal services, items of a purely
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Any other service that is not mentioned in the list above.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pkgSideContents">
+                    <div class="pkgContentSideCards">
+                        <h5>Why Broad Peak Adventure?</h5>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Experienced</h6>
+                                <p class="packageText text-center">An experienced trekking tour operator, with a team of an experienced adventure enthusiast ensure to give our clients well-designed trekking tour packages.</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Certified</h6>
+                                <p class="packageText text-center">We are certified by major tour and travel associations in Pakistan (Ministry of Tourism, Govt of Pakistan and England).</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Happy Customers</h6>
+                                <p class="packageText text-center">BroadPeak Adventure has received numerous accolades from its happy customers for its excellent services and best adventure holidays..</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Local Offices</h6>
+                                <p class="packageText text-center">We have local office in Skardu, Islamabad and England for our customers to find assistance anytime and anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </div>
+            <div id="related-content-placeholder"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

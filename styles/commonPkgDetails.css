@@ -1,0 +1,618 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #004b91;
+    --red:#f9556d;
+    --green:#00AB33;
+    --drakblue: #09233b;
+    --btn-color:#FFBA08;
+}
+.topDistinationGilgitBaltistan{
+  width: 100%;
+  height: 300px;
+}
+.hunzaDistinationBanner {
+  background-image: url(/assests/images/distinationImages/huzaDistinatio-broadPeak.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.skarduDistinationBanner{
+  background-image: url(/assests/images/distinationImages/shangrilla-BroadPeakAdventures.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  padding-bottom: 20px;
+  filter: brightness(1);
+  display: flex;
+  justify-content: center;
+}
+.fairyMedowDistinationBanner {
+  background-image: url(/assests/images/distinationImages/fairyMedow-broad-peak.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  padding-bottom: 20px;
+  filter: brightness(1);
+  display: flex;
+  justify-content: center;
+}
+.chitralDistinationBanner {
+  background-image: url(/assests/images/distinationImages/chitral-broadPeak-Adventure.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+.islamabadDistinationBanner {
+  background-image: url(/assests/images/distinationImages/faisal-mosques-broad-peakAdventure.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  padding-bottom: 20px;
+  filter: brightness(1);
+  display: flex;
+  justify-content: center;
+}
+.distinationBannerHeadings{
+  color: #ffb900;
+  padding-top: 80px !important;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Caveat", cursive;
+  padding-left: 20px;
+}
+.sticky {
+  /* Styles for when the navbar becomes sticky */
+  position: fixed;
+  top: 40px; 
+  width: 100%; /* Ensure it stretches across the viewport */
+  z-index: 1000; /* Keep it on top of other elements */
+}
+
+.content {
+  padding: 20px;
+}
+
+.sticky + .content {
+  padding-top: 50px; /* Adjust for navbar height */
+}
+
+.mainHeading{
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: bold;
+    color: var(--drakblue);
+    font-family: "montserrat", sans-serif;
+}
+.subHeadings{
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: bold;
+    color: var(--drakblue);
+    font-family: "montserrat", sans-serif;
+}
+
+.heading-btn-pkg{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookPkg-btn {
+  padding: 4px 10px;
+  border: none;
+  background-color: var(--red);
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 12px;
+  color: white;
+  line-height: 20px;
+}
+
+.bookPkg-btn:hover{
+  box-shadow: 0 13px 13px 0 rgba(249, 85, 109, .4);
+  background-color: #ef4060;
+}
+
+.normalHeadings{
+  font-size: 15px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--drakblue);
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.contentHeadings{
+  font-family: "montserrat", sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+  color: #3B404B;
+  margin-bottom: 12px;
+  padding-bottom: 2px;
+  margin-top: 28px;
+  border-bottom: 1px solid #FFBA08;
+  display: inline-block;
+}
+
+.smallHeadings{
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  font-family: "montserrat", sans-serif;
+  color: #000000;
+}
+
+
+.packageText{
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+    color: #666666;
+    line-height: 24px;
+}
+
+.daysPkg{
+  color: #f9556d;
+}
+
+.headingThreec{
+    margin-block: 40px;
+    text-align: center;
+}
+
+.pkgDetailsContainer{
+    width: 100%;
+    max-width: 1240px;
+    margin-inline: auto;
+}
+.pkgDetailsSubContainer{
+    padding-inline: 20px;
+}
+.pkgDetailsWrapper{
+    /* padding-inline: 20px; */
+    display: flex;
+}
+
+.pkgDetailsSlide{
+    width: 100%;
+    max-width: 780px;
+    max-height: 363px;
+    overflow: hidden;
+    position: relative;
+}
+.pkgDetailsSlideImage{
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    
+}
+.pkgDetailsSlideImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    flex: 0 0 100%;
+}
+.pkgDetailsArrow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%); 
+    padding: 0 10px;
+}
+.pkgDetailsArrow img:first-child {
+    left: 10px;
+}
+
+.pkgDetailsArrow img:last-child {
+    right: 10px;
+}
+.pkgDetailsArrow img{
+    width: 22px;
+    cursor: pointer;
+}
+.alignStart{
+  align-items: flex-start !important;
+}
+
+/* side */
+
+.pkgDetailsideCard{
+    width: 100%;
+    max-width: 510px;
+    padding: 15px;
+    background-color: #68a5ff24;
+}
+.pakageInclusions{
+    margin-bottom: 12px;
+}
+.pakageInclusions ul{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-decoration: none;
+    list-style: none;
+}
+.pakageInclusions ul li img{
+    display: block;
+    margin: 0 auto 0 auto;
+    height: 50px;
+}
+.pakageInclusions ul li img{
+    width: 30px;
+}
+.pakageDetailInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.hrliine{
+    margin-block: 10px;
+}
+.ptag, .spanTag{
+    width: 50%;
+}
+/* .ptag{
+    background-color: #66e5f932;
+}
+.spanTag{
+    background-color: #ffb90816;
+} */
+.ptag{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+}
+.spanTag{
+  font-size: 13px;
+  color: #666666;
+}
+
+.pkgDetailsNAv{
+    width: 100%;
+    background-color: #214e44;
+    position: sticky;
+}
+.pkgDetailsNAv ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.pkgDetailsNAv ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.54s ease;
+}
+.pkgDetailsNAv ul li a:hover{
+  color: var(--blue);
+}
+.pkgDetailsNAv ul a{
+    padding: 4px 20px;
+}
+.pkgnav-btn{
+  /* border-left: 0.5px solid #cccccc55;
+  border-right: 0.5px solid #cccccc55; */
+  padding: 10px 0px;
+  transition: 0.74s ease;
+}
+.pkgnav-btn:hover{
+  background-color: var(--btn-color);
+  color: var(--blue);
+}
+.activeOverView{
+  background-color: var(--btn-color);
+}
+/* faq */
+/* faqstart */
+.pagDetailsContents{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.PkgContentsleft {
+    width: 65%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background: radial-gradient(343px at 46.3% 47.5%, rgb(242, 242, 242) 0%, rgb(241, 241, 241) 72.9%);
+
+  }
+  .pkgContentWrapper{
+    padding: 10px 24px;
+    padding-bottom: 50px !important;
+  }
+  .pkgSideContents{
+    max-width: 30%;
+  }
+  .pkgContentSideCards{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  }
+  .pkgContentSideCards h5{
+    font-size: 18px;
+    color: var(--drakblue);
+    margin-bottom: 14px;
+  }
+  .pkgCradExperienced{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .pkgCradExperienced img{
+    width: 30px;
+  }
+
+  .highLight ul{
+    list-style: none;
+  }
+  .highLight ul li{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 7px;
+  }
+  .dots{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #FFBA08;
+  }
+
+
+  .pkgItinerayDays{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pkgItinerayDays span{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-right: 6px;
+  }
+
+  .pkgItinerayDays img{
+    width: 30px;
+  }
+  .pkgOverviewText ul li img{
+    width: 20px;
+    position: relative;
+    top: 2.5px;
+  }
+  .includeCustom ul li{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .mb-3{
+    margin-bottom: 12px;
+  }
+
+  /* faq */
+
+  /* faqstart */
+.faqContainerWarrper {
+  /* padding: 4rem; */
+  /* margin: 4px auto; */
+  width: 90%;
+}
+.faqPara{
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
+  font-weight: 500;
+}
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid var(--lightgray);
+    button[aria-expanded='true'] {
+      border-bottom: 1px solid #FFBA08;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: var(--green);
+      &::after {
+        cursor: pointer;
+        color: var(--drakblue);
+        border: 1px solid #FFBA08;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+      font-family: "montserrat", sans-serif;
+      font-weight: 400;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: var(--green);
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 18em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+      overflow-y: auto;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 20px 0;
+    }
+  }
+}
+
+@media only screen and (max-width:1023px){
+  .pkgCradExperienced {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    flex-direction: column;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-center {
+  line-height: 21px !important;
+  text-align: center !important;
+}
+.pkgDetailsWrapper {
+  flex-direction: column;
+  align-items: center;
+}
+.pkgDetailsideCard {
+  max-width: 780px;
+}
+.pakageInclusions ul {
+  align-items: center;
+  justify-content: space-around;
+  gap: unset;
+}
+}
+@media only screen and (max-width: 767px){
+  .pkgDetailsNAv{
+    overflow: hidden;
+  }
+  .navScroll{
+    min-width: 367px !important;
+    overflow: scroll;
+  }
+  .pagDetailsContents {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.pkgSideContents {
+  max-width: 100%;
+}
+.PkgContentsleft {
+  width: 100%;
+}
+.pkgContentSideCards h5{
+  text-align: center;
+}
+.pkgDetailsSubContainer {
+  padding-inline: 10px;
+}
+.mainHeading {
+  font-size: 36px;
+  line-height: 35px;
+}
+.dots {
+  min-width: 10px;
+}
+}
+@media only screen and (max-width:600px){
+  .distinationBannerHeadings {
+    padding-top: 103px !important;
+    font-size: 46px;
+}
+.chitralDistinationBanner{
+  height: auto;
+}
+}
+@media only screen and (max-width: 560px){
+  .sliderhidden{
+    overflow: auto;
+  }
+  .topslide{
+    min-width: 567px !important;
+    overflow: auto;
+  }
+  .contentHeadings {
+    font-size: 23px;
+    line-height: 28px;
+}
+.pkgContentWrapper {
+  padding: 10px 14px;
+}
+.bookPkg-btn {
+  padding: 4px 6px;
+  font-size: 11px;
+}
+}
+
+

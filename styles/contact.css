@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .contactBanner{
+    background-image: url(/assests/images/contactBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+   
+} */
+.contactbgImage{
+    background-image: url(/assests/images/contactbgImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  
+    padding-bottom: 20px;
+}
+
+.contactBanner h2{
+  padding-top: 30px;
+  font-size: 40px;
+  font-family: "Audiowide", sans-serif !important;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: upDown 2s ease-in-out infinite;
+  position: relative;
+}
+@keyframes upDown{
+    0%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.contactBanner p{
+    font-size: 22px;
+    color: #FFBA08;
+    margin-top: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+.contactBanner span{
+    color: #f9556d;
+}
+.contactForm{
+    max-width: 1160px;
+    margin-inline: auto;
+    /* background-color: #707070; */
+    font-family: "montserrat", sans-serif;
+    margin-top: 30px;
+}
+.formWrapper{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.leftSide{
+    width: 100%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.underLineGetInTouch{
+    width: 60px;
+    height: 2px;
+    background-color: #f9556d;
+}
+.iconContent{
+    padding: 30px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 290px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.bgIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #2f8181;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgIcon img{
+    width: 20px;
+}
+.contentWrapperForm{
+    width: 80%;
+}
+.contentWrapperForm h4{
+    font-size: 16px;
+    font-family: "montserrat", sans-serif;
+    color: #004b91;
+
+}
+.contentWrapperForm p{
+    margin-top: 4px;
+}
+
+.contentWrapperForm a{
+    text-decoration: none;
+    color: #000;
+    word-break: break-all;
+    transition: all 0.3s;
+}
+
+.contentWrapperForm a:hover{
+    color: #f9556d;
+}
+
+.rightSide{
+    width: 100%;
+    max-width: 70%;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    z-index: 888;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.circlebg{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px 18px;
+    background-color: #1dffff2b;
+    position: absolute;
+    z-index: 999;
+    top: -10px;
+    right: -10px;
+}
+.leftSideFormContaiber{
+    padding: 20px;
+}
+.leftSideFormContaiber p{
+    margin-top: 12px;
+}
+
+.inputFiledWrapper{
+    margin-top: 20px;
+ 
+}
+
+.inputWrapper{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.inputs{
+    width: 50%;
+}
+.inputs label{
+    font-weight: 500;
+}
+.subjectFeild label{
+    font-weight: 500;
+}
+.inputs input{
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: 0.4px solid #ccc;
+}
+.subjectFeild{
+    margin-top: 20px;
+}
+.subjectFeild input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    outline: none;
+    border-radius: 4px;
+    border: 0.4px solid #ccc;
+}
+.textArea{
+    margin-top: 20px;
+}
+
+.textArea textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: 0.4px solid #ccc;
+}
+.submitBtn{
+    padding-inline: 20px;
+    padding-block: 8px;
+    border-radius: 4px;
+    /* border: 0.4px solid #ccc; */
+    margin-top: 12px;
+    background-color: #FFBA08;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.submitBtn:hover{
+    background-color:#ab7c05 ;
+}
+.textArea textarea{
+    color: #999797;
+}
+
+@media only screen and (max-width:965px){
+    .rightSide {
+        max-width: 100%;
+    }
+    .leftSide {
+        max-width: 100%;
+    }
+    .formWrapper {
+        justify-content: space-between;
+    }
+    .formWrapper {
+        flex-direction:column-reverse;
+    }
+}
+@media only screen and (max-width:600px){
+    .contactBanner h2 {
+        font-size: 32px;
+    }
+}

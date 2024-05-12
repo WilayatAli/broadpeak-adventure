@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunza | BroadPeak-Adventures</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- cavitFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/k2BaseCampTrek.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+    <link rel="stylesheet" href="styles/skarduDistination.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            fetch('relatedPackage.html')
+                .then(response => response.text())
+                .then(data => {
+                const relatedPlaceholder = document.getElementById('related-content-placeholder');
+                relatedPlaceholder.insertAdjacentHTML('beforebegin', data); 
+                })
+                .catch(error => console.error('Error fetching related package:', error));
+            });
+        </script>
+        <section class="topDistinationGilgitBaltistan">
+            <div class="hunzaDistinationBanner">
+                <h1 class="distinationBannerHeadings">HUNZA</h1>
+            </div>
+        </section>
+        <section class="destinationContainer">
+            <div class="imageFrameWrapper">
+                <div class="imageFrameOne">
+                <img src="./assests/images/distinationImages/hunza1.webp" alt="">
+                <div class="imageDescribtion">
+                    Altit-Fort
+                    <span>Hunza</span>
+                </div>
+                </div>
+                <div class="imageFrameOne">
+                    <img src="./assests/images/distinationImages/hunza-view.jpg" alt="">
+                    <div class="imageDescribtion">
+                        Hunza-View
+                        <span></span>
+                    </div>
+                </div>
+                <div class="imageFrameOne">
+                    <img src="./assests/images/distinationImages/hunza3.jpg" alt="">
+                    <div class="imageDescribtion">
+                        Hunza
+                        <span></span>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <div class="paddingInline">
+            <div class="max-width">
+                <h4 class="heading text-center">Discover Hunza</h4>
+                <span class="subHeadingz">A Symphony of Natural Beauty and Cultural Richness</span>
+                <p class="text text-width">Located in the Gilgit-Baltistan region of northern Pakistan, Hunza is a breathtaking valley nestled amidst the towering peaks of the Karakoram Range. Known for its stunning landscapes, rich culture, and warm hospitality, Hunza attracts travelers from around the globe. Whether you're seeking adventure, history, or serenity, Hunza has something for everyone.</p>
+
+            <div class="skardu">
+                <h6 class="subHeading">Spectacular Landscapes</h6>
+                <p class="text">Hunza offers some of the most awe-inspiring vistas in the world. The valley is surrounded by majestic peaks, including Rakaposhi, Ultar Sar, and Ladyfinger Peak, creating a dramatic backdrop for your journey. As you traverse the region, you'll be greeted by lush orchards, terraced fields, and glistening rivers, all contributing to Hunza's unique charm.</p>
+
+                <h6 class="subHeading">Gateway to Adventure</h6>
+                <p class="text">For adventure enthusiasts, Hunza serves as a launchpad for trekking and mountaineering expeditions. The renowned Karakoram Highway runs through the valley, offering breathtaking views at every turn. Popular trekking routes like the Rakaposhi Base Camp trek and the Passu Glacier trek provide opportunities to explore the rugged terrain and experience the beauty of the Karakoram up close. Additionally, Hunza's picturesque valleys offer excellent spots for hiking, climbing, and paragliding.</p>
+
+                <h6 class="subHeading">Adventure Awaits</h6>
+                <p class="text">For adventure seekers, Skardu is a playground of possibilities. Trekking routes like the Baltoro Glacier and Concordia offer unparalleled views and the chance to explore some of the most remote areas on the planet. For climbers, the challenge of scaling some of the highest peaks is a once-in-a-lifetime opportunity. Additionally, Skardu's surrounding valleys provide ample opportunities for rock climbing, paragliding, and off-road driving.</p>
+                
+                <h6 class="subHeading">Tranquil Lakes and Hidden Valleys</h6>
+                <p class="text">Hunza's natural beauty extends beyond its peaks. Attabad Lake, formed after a massive landslide, is a stunning turquoise gem that captivates visitors with its striking color and serene surroundings. Nearby, the Hussaini Suspension Bridge, one of the longest suspension bridges in the world, offers a thrilling experience and stunning views. Explore the hidden valleys of Gojal and Shimshal for a glimpse into remote communities and untouched landscapes.</p>
+
+                <h6 class="subHeading">Cultural Heritage and Local Traditions</h6>
+                <p class="text">Hunza is steeped in history and tradition, with a vibrant culture that reflects its rich past. Visit the ancient Baltit and Altit Forts to learn about the region's history and architectural heritage. The forts offer panoramic views of the valley and a glimpse into the region's strategic significance. Hunza's people are known for their hospitality, and you can experience their warmth through traditional music, dance, and cuisine. Don't miss the chance to try local dishes like chapshuro and apricot-based desserts, or to participate in traditional festivals that celebrate Hunza's heritage.</p>
+
+                <h6 class="subHeading">Plan Your Visit to Hunza</h6>
+                <p class="text">Whether you're a seasoned adventurer or a leisurely traveler, Hunza offers a diverse range of experiences. From its stunning landscapes to its rich cultural heritage, Hunza is a destination that will leave you in awe. Plan your trip today and discover the magic of this enchanting valley in the heart of the Karakoram.</p>
+        </div>
+
+            </div>
+        </div>
+        <div class="image-gallery-container">
+        <h5 class="subHeading">Image Gallery</h5>
+        <div class="image-gallery">
+            <!-- Row 1 -->
+            <div class="gallery-row">
+                <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+            </div>
+            <!-- Row 2 -->
+            <div class="gallery-row">
+                <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+            </div>
+        </div>
+        </div>
+        <!-- Overlay/Modal for full-size image -->
+        <div class="image-overlay" id="image-overlay">
+            <span class="close-overlay" id="close-overlay">&times;</span>
+            <img id="full-size-image" src="" alt="Full Size Image" />
+        </div>
+        <div class="max1440">
+        <div id="related-content-placeholder"></div>
+        </div>
+    <script src="./javaScripts/slider.js"></script>
+    <script src="script.js"></script>
+    <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

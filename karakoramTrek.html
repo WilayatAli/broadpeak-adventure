@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karakoram Trek | Ultimate Adventure</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/nangaParbat.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => { // Ensure script runs after DOM is fully loaded
+      fetch('relatedPackage.html') // Fetch the content from the relatedPackage.html file
+        .then(response => response.text()) // Convert the response to text
+        .then(data => {
+          const relatedPlaceholder = document.getElementById('related-content-placeholder'); // Reference to the placeholder
+          relatedPlaceholder.insertAdjacentHTML('beforebegin', data); // Insert content before the footer
+        })
+        .catch(error => console.error('Error fetching related package:', error)); // Error handling
+    });
+  </script>
+         <div class="backGroundBanner"></div>
+        <div class="pkgDetailsContainer">
+            <h3 class="mainHeading k2trekking headingThreec">Karakoram Trek</h3>
+            <div class="pkgDetailsSubContainer">
+            <div class="pkgDetailsWrapper">
+                <div class="pkgDetailsSlide">
+                    <div class="pkgDetailsSlideImage"  id="imageSlider">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/NangaParbat2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/nanga-parbat-baseCamp2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/Nangaparbat3.jpg" alt="">
+                    </div>
+                    <div class="pkgDetailsArrow">
+                        <img src="./assests/icons/arrowDoubleLeft.svg" alt="arrow">
+                        <img src="./assests/icons/arrowDoubleRight.svg" alt="arrow">
+                    </div>
+                </div>
+            <div class="pkgDetailsideCard">
+                <h1 class="subHeadings packageText">Karakoram Trek</h1>
+                <p class="packageText daysPkg">25 Days</p>
+                <hr class="hrliine">
+                <div class="pakageInclusions sliderhidden">
+                    <ul class="smallHeadings topslide">
+                        <li><img src="./assests/pakageDetailIconAndImage/hotel.svg" alt="star hotel">
+                        ACCOMONDATION</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/car.svg" alt="transport">
+                        TRANSPORT</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/meal.svg" alt="meal">
+                        MEALS</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/guide.svg" alt="sightseeing">
+                        PROFFESIONAL GUIDES</li>
+                    </ul>
+                </div>
+                <hr class="hrliine">
+                <div class="packageText">
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Country :</p>
+                        <span class="spanTag">Pakistan</span>
+                    </div>
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Area :</p>
+                        <span class="spanTag">Karakoram Trek</span>
+                    </div>
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Tour Type :</p>
+                        <span class="spanTag">Trekking</span>
+                    </div>
+
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Duration :</p>
+                        <span class="spanTag">25 Days</span>
+                    </div>
+
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Best Season :</p>
+                        <span class="spanTag">Mid April- October</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pkgDetailsNAv"  id="stickyNav">
+                <ul class="navScroll">
+                    <li class="pkgnav-btn activeOverView"><a href="#overView">OverView</a></li>
+                    <li class="pkgnav-btn"><a href="#highlight">Highlights</a></li>
+                    <li class="pkgnav-btn"><a href="#itinerarys"> Itinerary</a></li>
+                    <li class="pkgnav-btn"><a href="#Includes">Inclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#Excludes">Exclusions</a></li>
+                    <!-- <li class="pkgnav-btn"><a href="#FAQz">FAQ,s</a></li> -->
+                </ul>
+            </div>
+            <div class="pagDetailsContents">
+                <div class="PkgContentsleft">
+                   <div class="pkgContentWrapper">
+                        <div class="pkgOverviewText" id="overView">
+                            <h5 class="contentHeadings">OverView</h5>
+                            <p class="packageText">The Karakoram trek is a breathtaking adventure through the heart of the Karakoram mountain range. With stunning views of 8,000m peaks including K2, Broad Peak, Gasherbrum I and II, and the Gondogoro La Pass, this trek is a true test of endurance and a must-do for any mountain enthusiast. Explore the scenic Hushe Valley, the throne room of the mountain gods at Concordia, and trek along the Vigne and Gondogoro glaciers. Immerse yourself in the beauty of glaciers, glacial lakes, waterfalls, and streams while taking in views of other peaks ranging from 5,000m to 8,000m. Don’t miss this once-in-a-lifetime opportunity to experience the awe-inspiring majesty of the Karakoram. <br><br>
+                            Please note that this itinerary is just a general guideline and may vary based on weather conditions, trail conditions, and other factors. It is always best to consult with our team to ensure a safe and enjoyable trek.
+                            </p>
+                        </div>
+                        <!-- <div class="pkgOverviewText highLight" id="highlight">
+                            <h5 class="contentHeadings">Highlights</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Trek to Rush Lake, one of the world's highest lakes, near the majestic Rush Pari peak.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Enjoy panoramic views of Nagar Valley's iconic peaks, including Spantik and Phuparash.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Marvel at the surrounding beauty, with glimpses of Hopper and Miar Glaciers.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Witness breathtaking vistas of the Karakoram Mountains, potentially including K2 Summit on clear days.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="pkgItinerarys" id="itinerarys">
+                            <h2 class="contentHeadings">Itinerary</h2>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                 <img src="./assests/icons/day.svg" alt="image">
+                                 <div>
+                                 <p class="ItineraryBold"><span>Day - 1: </span>Arrival in Islamabad</p>
+                                 <p  class="packageText">Arrive in Islamabad, Pakistan. <br>
+                                    Transfer to a comfortable hotel for rest and acclimatization.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 2: </span>Islamabad Sightseeing</p>
+                                <p  class="packageText">Explore the capital city, visiting Faisal Mosque, Lok Virsa Museum, and Daman-e-Koh.
+                                    Attend a pre-trek briefing in the evening.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 3: </span>Islamabad to Skardu (By Air)</p>
+                            <p  class="packageText">Early morning flight to Skardu. <br>
+                                Check into a hotel upon arrival. <br>
+                                Rest and acclimatization.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 4: </span>Skardu Exploration</p>
+                            <p  class="packageText">Visit Shangrila Resort, and Skardu's local bazaar and Katpana Desert.
+                                Final trek preparations and gear check.</p>
+                        </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 5: </span>Skardu to Askole (4x4)</p>
+                                <p  class="packageText">Scenic drive to Askole, the gateway to Karakoram. (Drive Time: Approx. 9-10 hours) <br>
+                                    Begin the trek with a walk through Askole village. (Walking Time: Approx. 2 hours).</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 6: </span>Askole to Jhula</p>
+                                    <p  class="packageText">Trek to Jhula via the mesmerizing Biafo Glacier. (Trekking Time: Approx. 6-7 hours) Camp near the Jhula campsite.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day: 7: </span>Jhula to Paiju / Paiyu</p>
+                                <p  class="packageText">Continue trekking through enchanting landscapes to reach Paiyu. (Trekking Time: Approx. 6-7 hours) Enjoy the views of the Cathedral Towers..</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 8: </span>Rest Day at Paiyu</p>
+                                <p  class="packageText">Acclimatization day with short hikes for better adjustment.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 9: </span>Paiyu to Khuburse</p>
+                                <p  class="packageText">Resume trekking to Khuburse, crossing the Goro II glacier. (Trekking Time: Approx. 7-8 hours) Witness the grandeur of the Karakoram peaks.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 10: </span>Khuburse to Concordia</p>
+                                <p  class="packageText">Trek to Concordia, the heart of Karakoram. (Trekking Time: Approx. 6-7 hours)
+                                    Behold the panoramic views of K2, Broad Peak, Gasherbrum I, and Gasherbrum II.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 11: </span>Rest Day at Concordia</p>
+                                <p  class="packageText">Rest and explore the surroundings.
+                                    Capture breathtaking photographs of the towering peaks.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 12: </span>Concordia to Ali Camp</p>
+                            <p  class="packageText">Trek to Ali Camp with views of Chogolisa and Mitre Peak. (Trekking Time: Approx. 5-6 hours) Camp in the mesmerizing Karakoram wilderness.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 13: </span>Ali Camp to Gondogoro La Base Camp</p>
+                            <p  class="packageText">Trek towards Gondogoro La Base Camp. (Trekking Time: Approx. 6-7 hours)
+                                Enjoy the views of Laila Peak.
+                            </p>
+                        </div>
+                        </div>
+
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 14: </span>
+                                Gondogoro La Base Camp to High Camp</p>
+                            <p  class="packageText">Ascend to Gondogoro La High Camp. (Trekking Time: Approx. 4-5 hours) Rest and prepare for the Gondogoro La pass.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 15: </span> Cross Gondogoro La to Khuspang</p>
+                            <p  class="packageText">Early morning ascent to Gondogoro La (5,585m). (Trekking Time: Approx. 8-9 hours)
+                                Descend to Khuspang. <br>
+                                Camp overnight amidst stunning mountain vistas.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 16: </span>Khuspang to Dalsangpa</p>
+                            <p  class="packageText">Trek to Dalsangpa, another beautiful campsite. (Trekking Time: Approx. 6-7 hours)
+                                Views of Masherbrum and Muztagh Tower.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 17: </span>Dalsangpa to Shaishcho</p>
+                            <p  class="packageText">Continue the trek to Shaishcho, a serene campsite. (Trekking Time: Approx. 6-7 hours)
+                                Immerse yourself in the rugged beauty of the Karakoram.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 18: </span>Shaishcho to Hushe</p>
+                            <p  class="packageText">Trek to Hushe, the last village on the trail. (Trekking Time: Approx. 5-6 hours)
+                                Celebrate the completion of the trek with locals.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 19: </span>Hushe Exploration Day</p>
+                            <p  class="packageText">Hushe Exploration Day
+                            </p>
+                        </div>
+
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 20: </span>Drive to Skardu</p>
+                            <p  class="packageText">Scenic drive back to Skardu. (Drive Time: Approx. 5-6 hours) <br>
+                                Check into the hotel for a well-deserved rest.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 21: </span>Skardu to Deosai National Park</p>
+                            <p  class="packageText">Drive to Deosai National Park (The Land of Giants)
+                                Stop at Satpara lake before reaching Deosai and enjoy the scenic views of the mountain covered lake.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 22: </span>Spend a night at Sheosar lake</p>
+                            <p  class="packageText">Explore the unimaginable beauty of deosai and camp at Sheosar lake.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 23: </span>
+                                Drive Back to Skardu</p>
+                            <p  class="packageText">Local Exploration and rest day
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 24: </span>Fly to Islamabad from Skardu</p>
+                            <p  class="packageText">Enjoy the views of karakoram and himalyan range from the sky and bit farewell to Skardu
+                            </p>
+                        </div>
+                    </div>
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 25: </span>Departure from Islamabad</p>
+                            <p  class="packageText">Transfer to the airport for your departure.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="pkgSideContents">
+                    <div class="pkgContentSideCards">
+                        <h5>Why Broad Peak Adventure?</h5>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Experienced</h6>
+                                <p class="packageText text-center">An experienced trekking tour operator, with a team of an experienced adventure enthusiast ensure to give our clients well-designed trekking tour packages.</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Certified</h6>
+                                <p class="packageText text-center">We are certified by major tour and travel associations in Pakistan (Ministry of Tourism, Govt of Pakistan and England).</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Happy Customers</h6>
+                                <p class="packageText text-center">BroadPeak Adventure has received numerous accolades from its happy customers for its excellent services and best adventure holidays..</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Local Offices</h6>
+                                <p class="packageText text-center">We have local office in Skardu, Islamabad and England for our customers to find assistance anytime and anywhere.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div id="related-content-placeholder"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

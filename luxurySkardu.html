@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Skardu Tour | BroadPeak Adventures</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => { // Ensure script runs after DOM is fully loaded
+      fetch('relatedPackage.html') // Fetch the content from the relatedPackage.html file
+        .then(response => response.text()) // Convert the response to text
+        .then(data => {
+          const relatedPlaceholder = document.getElementById('related-content-placeholder'); // Reference to the placeholder
+          relatedPlaceholder.insertAdjacentHTML('beforebegin', data); // Insert content before the footer
+        })
+        .catch(error => console.error('Error fetching related package:', error)); // Error handling
+    });
+  </script>
+        <div class="backGroundBanner"></div>
+        <div class="pkgDetailsContainer">
+            <h3 class="mainHeading k2trekking headingThreec">Luxury Skardu Tour</h3>
+            <div class="pkgDetailsSubContainer">
+            <div class="pkgDetailsWrapper">
+                <div class="pkgDetailsSlide">
+                    <div class="pkgDetailsSlideImage"  id="imageSlider">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/NangaParbat2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/nanga-parbat-baseCamp2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/Nangaparbat3.jpg" alt="">
+                    </div>
+                    <div class="pkgDetailsArrow">
+                        <img src="./assests/icons/arrowDoubleLeft.svg" alt="arrow">
+                        <img src="./assests/icons/arrowDoubleRight.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="pkgDetailsideCard">
+                    <h1 class="subHeadings packageText">Luxury Skardu Tour</h1>
+                    <p class="packageText daysPkg">7 Days</p>
+                    <hr class="hrliine">
+                    <div class="pakageInclusions sliderhidden">
+                        <ul class="smallHeadings topslide">
+                            <li><img src="./assests/pakageDetailIconAndImage/hotel.svg" alt="star hotel">
+                            ACCOMONDATION</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/car.svg" alt="transport">
+                            TRANSPORT</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/meal.svg" alt="meal">
+                            MEALS</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/guide.svg" alt="sightseeing">
+                            PROFFESIONAL GUIDES</li>
+                        </ul>
+                    </div>
+                    <hr class="hrliine">
+                    <div class="packageText">
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Country :</p>
+                            <span class="spanTag">Pakistan</span>
+                        </div>
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Area :</p>
+                            <span class="spanTag">Luxury Skardu</span>
+                        </div>
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Tour Type :</p>
+                            <span class="spanTag">Trekking</span>
+                        </div>
+
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Duration :</p>
+                            <span class="spanTag">14 Days</span>
+                        </div>
+
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Best Season :</p>
+                            <span class="spanTag">Mid April- October</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pkgDetailsNAv"  id="stickyNav">
+                <ul class="navScroll">
+                    <li class="pkgnav-btn activeOverView"><a href="#overView">OverView</a></li>
+                    <!-- <li class="pkgnav-btn"><a href="#highlight">Highlights</a></li> -->
+                    <li class="pkgnav-btn"><a href="#itinerarys"> Itinerary</a></li>
+                    <li class="pkgnav-btn"><a href="#Includes">Inclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#Excludes">Exclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#FAQz">FAQ,s</a></li>
+                </ul>
+            </div>
+            <div class="pagDetailsContents">
+                <div class="PkgContentsleft">
+                   <div class="pkgContentWrapper">
+                        <div class="pkgOverviewText" id="overView">
+                            <h5 class="contentHeadings">OverView</h5>
+                            <p class="packageText">Experience the epitome of luxury and indulge in a once-in-a-lifetime journey through the captivating landscapes of Skardu. Our Luxury Skardu Tour is meticulously crafted to offer you an unforgettable experience that combines opulent accommodations, cultural immersion, and breathtaking natural beauty. <br> <br>
+                            Relish the luxurious comforts of your accommodations as you stay at the renowned Shangrila Resort, nestled on the banks of the tranquil Lower Kachura Lake. Enjoy a boat ride on the serene turquoise waters, surrounded by majestic mountains, immersing yourself in the serenity of the surroundings.<br> <br>
+                            <b>This tour is for people who want to explore Skardu with luxury. 
+                                This tour is perfect for those who value their time and experience and want to make the most of their experience by exploring more in less time.</b>
+                            </p>
+                        </div>
+                        <!-- <div class="pkgOverviewText highLight" id="highlight">
+                            <h5 class="contentHeadings">Highlights</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Trek to Rush Lake, one of the world's highest lakes, near the majestic Rush Pari peak.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Enjoy panoramic views of Nagar Valley's iconic peaks, including Spantik and Phuparash.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Marvel at the surrounding beauty, with glimpses of Hopper and Miar Glaciers.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Witness breathtaking vistas of the Karakoram Mountains, potentially including K2 Summit on clear days.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="pkgItinerarys" id="itinerarys">
+                            <h2 class="contentHeadings">Itinerary</h2>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                 <img src="./assests/icons/day.svg" alt="image">
+                                 <div>
+                                 <p class="ItineraryBold"><span>Day - 1: </span>Arrival in Skardu</p>
+                                 <p  class="packageText">Arrive at the Skardu Airport, where you will be greeted by a representative from your luxury tour operator.<br>
+                                    Transfer to your luxurious hotel and check-in. <br>Take some time to relax and acclimate to the altitude of Skardu. <br>Enjoy a delicious welcome dinner at the hotel's fine dining restaurant.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 2: </span>Skardu City Tour and Shangrila Resort</p>
+                                <p  class="packageText">After breakfast, embark on a guided tour of Skardu city. <br> Visit the historic Kharpocho Fort and explore its ancient architecture and breathtaking views of the city. <br>Head to the famous Manthal Buddha Rock, an ancient rock carving that dates back to the 8th century. <br>Enjoy a leisurely lunch at a local restaurant, sampling traditional Balti cuisine.
+                                    In the afternoon, visit the enchanting Shangrila Resort, located on the banks of Lower Kachura Lake. <br>Take a relaxing boat ride on the lake and soak in the picturesque surroundings.
+                                    Return to your hotel for a sumptuous dinner and overnight stay.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 3: </span>Sadpara Lake - Deosai - Sheosar Lake</p>
+                            <p  class="packageText">i- Deosai National Park: we will wake up early and have a heavy breakfast, then we will depart towards Deosai.<br> Explore the stunning landscapes of Deosai, known as the "Land of Giants," featuring vast meadows, crystal-clear lakes, and snow-capped mountains. <br>Enjoy a picnic lunch amidst the pristine natural beauty of the park. <br> Spot wildlife, including Himalayan brown bears, ibex, and various bird species. <br> <br>
+                            ii- Sadpara Lake: we will make a short stay at Sadpara Lake and move on towards Deosai. Reach Bara Pani and will have lunch. (2 hours) <br><br> iii- Sheosar Lake Will drive through Green Meadows towards Sheoshar Lake, visit Sheoshar Lake and drive back to hotel. Dinner and overnight stay. <br><br>Return to Skardu in the evening and indulge in a luxurious dinner at your hotel.
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 4: </span>Sarfaranga Cold Desert - Shigar Valley and Shigar Fort</p>
+                            <p  class="packageText">After breakfast, check out from your hotel in Skardu and proceed to Shigar Valley.
+                                Arrive at the luxurious Serena Shigar Fort Residence, your accommodation for the day.
+                                Explore the picturesque Shigar Valley, known for its orchards, traditional architecture, and serene ambiance.<br>Visit the 17th-century Shigar Fort, a beautiful heritage site that has been converted into a museum and hotel. <br>Enjoy a guided tour of the fort, learning about its history and cultural significance.
+                                Indulge in a delightful lunch at the fort's restaurant, featuring local delicacies.
+                                Spend the afternoon</p>
+                        </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 5: </span>
+                                    Khaplu Valley and Khaplu Palace</p>
+                                <p  class="packageText">After breakfast, embark on a full-day excursion to the beautiful Khaplu Valley.
+                                    Explore the historical town of Khaplu and visit the stunning Khaplu Palace, a restored 19th-century palace that offers panoramic views of the valley.<br>
+                                    Enjoy a guided tour of the palace, admiring its intricate architecture and cultural artifacts.
+                                    Indulge in a traditional Balti lunch at a local restaurant.<br> Visit the Chaqchan Mosque, an ancient mosque known for its architectural beauty and cultural significance. <br> Return to Skardu in the evening and enjoy a luxurious dinner at your hotel.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 6: </span>Skardu Free Day and Leisure Activities</p>
+                                    <p  class="packageText">Today is a free day for you to relax and engage in leisure activities of your choice. Take a stroll along the riverside and enjoy the scenic beauty of Skardu. <br>
+                                    Visit local markets and shop for traditional handicrafts, gemstones, and souvenirs.
+                                    Alternatively, you can choose to go on a guided hike or explore the city's surrounding areas. <br>
+                                    In the evening, enjoy a special farewell dinner at a fine dining restaurant, accompanied by traditional music and dance performances.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day: 7: </span>
+                                    Depart from Skardu with some special souvenirs</p>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Included/NotIncluded -->
+                        <div class="pkgOverviewText includeCustom" id="Includes">
+                            <h5 class="contentHeadings">What's Included:</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Airfare form Islamabad to Skardu
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Luxury Car + Driver
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Experienced Guide</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Luxury Accommodation</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Breakfast and Dinner
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        All Entry Tickets
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        First aid medicine kit (basic)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pkgOverviewText includeCustom" id="Excludes">
+                            <h5 class="contentHeadings">What's Not Included</h5>
+                            <ul class="packageText">
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Health Insurance
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Visa fees
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Extra days
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Gratuities
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        (Any unforeseen or extra costs which is not mention or discussed with tour operator is not included)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                         <!-- faq -->
+                         <div class="faqContainerWarrper" id="FAQz">
+                            <h2 class="contentHeadings">FAQ's</h2>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is included in the Luxury Skardu Tour package?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>The package typically includes luxury accommodations, airport transfers, guided tours, meals as specified, entrance fees to attractions, and transportation for excursions.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Which airports serve Skardu and how do I reach there?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Skardu has its own domestic airport, Skardu Airport (KDU), which is connected to major cities in Pakistan. Travelers can reach Skardu by taking a domestic flight from Islamabad or Gilgit.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What is the best time to visit Skardu for a luxury tour?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>The best time to visit Skardu is during the months of May to October when the weather is pleasant and the roads are accessible. This allows for comfortable sightseeing, outdoor activities, and exploration of the region’s natural beauty.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Are luxury accommodations available in Skardu?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Yes, Skardu offers a range of luxury accommodations, including luxury hotels, resorts, and boutique properties. These accommodations provide premium amenities, stunning views, and top-notch service to enhance the luxury experience.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What are the main attractions and activities included in the Luxury Skardu Tour?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>The Luxury Skardu Tour usually includes visits to attractions such as Kharpocho Fort, Manthal Buddha Rock, Shangrila Resort, Deosai National Park, Kachura Lakes, Satpara Lake, Khaplu Valley, Khaplu Palace, and the Shigar Fort. Activities may include boat rides, wildlife spotting, cultural experiences, and scenic hikes.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Is it safe to travel to Skardu?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Skardu is generally considered safe for tourists, but it is always advisable to check the latest travel advisories and consult with your tour operator for the most up-to-date information. It is recommended to travel with a reputable tour operator and follow their guidance for a safe and enjoyable experience.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What should I pack for a Luxury Skardu Tour?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>It is recommended to pack comfortable clothing, including layers for changing temperatures, sturdy walking shoes, sun protection, a hat, sunglasses, and a good camera to capture the stunning landscapes. Additionally, don’t forget any necessary medications, personal toiletries, and travel documents.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Is travel insurance necessary for the Luxury Skardu Tour?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Travel insurance is highly recommended for any international or domestic travel. It provides coverage for medical emergencies, trip cancellations or interruptions, lost baggage, and other unforeseen circumstances. It is advised to review and purchase travel insurance before embarking on the tour.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Can the Luxury Skardu Tour be customized to specific preferences or extended?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Yes, luxury tour operators like us often provide the flexibility to customize the itinerary based on individual preferences. It is possible to extend the tour duration or add specific activities, subject to availability and additional costs. Discuss your requirements with us to create a tailored luxury experience.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pkgSideContents">
+                    <div class="pkgContentSideCards">
+                        <h5>Why Broad Peak Adventure?</h5>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Experienced</h6>
+                                <p class="packageText text-center">An experienced trekking tour operator, with a team of an experienced adventure enthusiast ensure to give our clients well-designed trekking tour packages.</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Certified</h6>
+                                <p class="packageText text-center">We are certified by major tour and travel associations in Pakistan (Ministry of Tourism, Govt of Pakistan and England).</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Happy Customers</h6>
+                                <p class="packageText text-center">BroadPeak Adventure has received numerous accolades from its happy customers for its excellent services and best adventure holidays..</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Local Offices</h6>
+                                <p class="packageText text-center">We have local office in Skardu, Islamabad and England for our customers to find assistance anytime and anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </div>
+            <div id="related-content-placeholder"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

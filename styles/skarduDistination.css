@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0000004b !important;
+}
+.header{
+    background-color: #eeeeee;
+}
+.backgroundColor{
+    background-image: url(/assests/images/distinationImages/shangrilla-BroadPeakAdventures.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    padding-bottom: 20px;
+    filter: brightness(1);
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundColor h4{
+    color: #e1e1e1;
+    padding-top: 50px !important;
+    font-size: 82px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "montserrat", sans-serif;
+}
+.destinationContainer{
+    width: 100%;
+    max-width: 1100px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+.max-width{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+    background-color: #eeeeee52;
+    padding: 30px 20px;
+    margin-inline: auto;
+    border-radius: 10px;
+}
+.paddingInline{
+    padding-inline: 20px;
+}
+.text-width{
+    text-align: center !important;
+    margin-inline: auto;
+    text-align: justify;
+}
+.imageFrameWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    margin-top: -100px;
+}
+.imageDescribtion{
+    z-index: 99;
+    position: absolute;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-inline: 10px;
+    font-family: "Caveat", cursive;
+}
+.imageDescribtion span{
+    color: #f99e01;
+}
+.imageFrameOne{
+    width: 260px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    justify-content: center;
+    display: flex;
+    align-items: end;
+    border: 1px solid rgb(255, 200, 0);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    text-align: center;
+}
+
+.imageFrameOne img{
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.70s ease;
+    cursor: pointer;
+}
+.imageFrameOne img:hover{
+    scale: 1.2;
+}
+
+.heading{
+    font-family: "montserrat", sans-serif;
+    font-size: 55px;
+    line-height: 67px !important;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.subHeading{
+    font-family: "montserrat", sans-serif;
+    font-size: 22px;
+    line-height: 23px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.text{
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+    color: #000;
+    margin-block: 10px;
+}
+.text-center{
+    text-align: center;
+}
+.subHeadingz{
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    color: rgb(255, 83, 9);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentBoxContainer{
+    width: 100%;
+    max-width: 1240px;
+    margin-inline: auto;
+}
+.contentBox1{
+    width: 100%;
+    /* background-color: #e8fdff;; */
+    padding: 30px 30px;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);}
+.classtext{
+    width: 50%;
+}
+.max1440{
+    width: 100%;
+    max-width: 1140px;
+    margin-inline: auto !important;
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS */
+/* Container with a max-width of 1100px */
+.image-gallery-container {
+    max-width: 1120px;
+    margin: 0 auto; /* Center the gallery horizontally */
+    padding: 10px; /* Optional padding */
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between; /* Equal space between images */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.gallery-image {
+    flex: 1;
+    max-width: 24%; /* Ensure 4 images fit in a row */
+    cursor: pointer;
+    border: 1px solid #ccc; /* Optional border */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Styles for the overlay/modal */
+.image-overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* High z-index to appear on top */
+}
+
+.image-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    .backgroundColor h4 {
+        padding-top: 103px !important;
+        font-size: 46px;
+    }
+    .imageFrameWrapper {
+        flex-direction: column;
+    }
+    .imageFrameOne {
+       width: 100%;
+       height: 160px;
+    }
+    .imageFrameOne {
+        box-shadow: none;
+    }
+    .heading {
+        font-size: 37px;
+        line-height: 36px !important;
+    }
+    .image-gallery {
+        flex-wrap: wrap;
+    }
+    .subHeadingz {
+        text-align: center;
+    }
+    .subHeadingz {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .max-width {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 1100px;
+        margin-inline: auto;
+        background-color: #eeeeee52;
+        padding: 27px 10px;
+        margin-inline: auto;
+        border-radius: 10px;
+    }
+}

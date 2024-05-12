@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FairyMedow | BroadPeak Adventures</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- cavitFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/k2BaseCampTrek.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+    <link rel="stylesheet" href="styles/skarduDistination.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            fetch('relatedPackage.html')
+                .then(response => response.text())
+                .then(data => {
+                const relatedPlaceholder = document.getElementById('related-content-placeholder');
+                relatedPlaceholder.insertAdjacentHTML('beforebegin', data); 
+                })
+                .catch(error => console.error('Error fetching related package:', error));
+            });
+        </script>
+        <div class="fairyMedowDistinationBanner">
+            <h1 class="distinationBannerHeadings">FAIRY-MEADOWS</h1>
+        </div>
+        <section class="destinationContainer">
+            <div class="imageFrameWrapper fairyMedowImgW">
+                <div class="imageFrameOne">
+                <img src="./assests/images/distinationImages/faireMedow.jpeg" alt="">
+                <div class="imageDescribtion">
+                    <span></span>
+                </div>
+                </div>
+                <div class="imageFrameOne">
+                    <img src="./assests/images/distinationImages/faireMedow-2.jpg" alt="">
+                    <div class="imageDescribtion">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="imageFrameOne">
+                    <img src="./assests/images/distinationImages/fairyMedow.-3.jpg" alt="">
+                    <div class="imageDescribtion">
+                        <span>Skardu</span>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <div class="paddingInline">
+            <div class="max-width">
+            <h4 class="heading text-center">Experience Fairy Meadows</h4>
+            <span class="subHeadingz">A Haven for Nature Lovers and Adventure Seekers</span>
+            <p class="text text-width">Located at the foot of Nanga Parbat in Pakistan's Gilgit-Baltistan region, Fairy Meadows is a stunning alpine meadow renowned for its spectacular views and serene atmosphere. Often described as a "paradise on Earth," this picturesque location attracts adventurers, trekkers, and nature enthusiasts from around the world. With its breathtaking landscapes and tranquil setting, Fairy Meadows is a destination where dreams come true.</p>
+
+            <div class="skardu">
+                <h6 class="subHeading">Gateway to Nanga Parbat</h6>
+                <p class="text">Fairy Meadows serves as the gateway to Nanga Parbat, the ninth-highest peak in the world, rising majestically to 8,126 meters. The towering presence of Nanga Parbat creates a dramatic backdrop, offering visitors a view of one of the most iconic and formidable mountains on Earth. The meadow itself provides a perfect vantage point to soak in the awe-inspiring beauty of the mountain and its surrounding glaciers.</p>
+
+                <h6 class="subHeading">Adventure and Trekking Opportunities</h6>
+                <p class="text">For those seeking adventure, Fairy Meadows is a haven of possibilities. The journey to the meadow begins with a thrilling jeep ride along one of the most adventurous roads in the world, followed by a trek through lush forests and along the Raikot Glacier. The trek to Fairy Meadows is a captivating experience, with panoramic views and abundant wildlife.
+                    <br> <br>
+                    From Fairy Meadows, you can embark on treks to various points of interest, including the Nanga Parbat Base Camp and Beyal Camp. These routes offer a chance to explore pristine wilderness, encounter unique flora and fauna, and marvel at the sheer scale of the surrounding mountains. Whether you're an experienced trekker or a casual hiker, Fairy Meadows provides an unforgettable adventure.
+                    
+                </p>
+
+                <h6 class="subHeading">A Place of Tranquility and Beauty</h6>
+                <p class="text">Fairy Meadows is not only a destination for adventure but also a place of profound tranquility. The meadow's lush green grass, interspersed with wildflowers, creates a serene and peaceful environment. As night falls, the starlit sky adds to the magical ambiance, making it a perfect spot for stargazing and enjoying the silence of nature.
+                    <br> <br>
+                For those seeking relaxation, Fairy Meadows offers rustic log cabins and camping sites where you can unwind and absorb the beauty around you. The area is also a photographer's dream, with countless opportunities to capture stunning images of the landscape and its changing light.</p>
+                
+                <h6 class="subHeading">Serene Lakes and Scenic Valleys</h6>
+                <p class="text">Beyond the high peaks, Skardu is also home to some of Pakistan's most beautiful lakes and valleys. Visit Shangrila Resort, where Lower Kachura Lake reflects the surrounding mountains in its crystal-clear waters. Venture to Upper Kachura Lake, known for its pristine beauty and tranquil atmosphere. The lush Deosai National Park, known as the "Land of Giants," offers a unique landscape of rolling plains and vibrant wildflowers, making it a haven for wildlife enthusiasts.</p>
+
+                <h6 class="subHeading">Embrace the Local Culture</h6>
+                <p class="text">Fairy Meadows is also a gateway to the culture and traditions of the local people. Visitors can learn about the customs and way of life of the locals, experiencing their warm hospitality and unique traditions. The simplicity and charm of the region's culture add to the allure of the meadow.</p>
+
+                <h6 class="subHeading">Plan Your Visit to Fairy Meadows</h6>
+                <p class="text">Fairy Meadows is a destination that combines adventure, natural beauty, and cultural richness. Whether you're drawn by the challenge of trekking to Nanga Parbat Base Camp or simply wish to experience the tranquility of an alpine meadow, Fairy Meadows offers something for everyone. Plan your visit today and discover why this enchanting location has captured the hearts of adventurers and nature lovers alike.</p>
+        </div>
+
+            </div>
+        </div>
+        <div class="image-gallery-container">
+            <h5 class="subHeading">Image Gallery</h5>
+            <div class="image-gallery">
+                <!-- Row 1 -->
+                <div class="gallery-row">
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                </div>
+                <!-- Row 2 -->
+                <div class="gallery-row">
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                </div>
+            </div>
+        </div>
+        <!-- Overlay/Modal for full-size image -->
+        <div class="image-overlay" id="image-overlay">
+            <span class="close-overlay" id="close-overlay">&times;</span>
+            <img id="full-size-image" src="" alt="Full Size Image" />
+        </div>
+        <div class="max1440">
+        <div id="related-content-placeholder"></div>
+        </div>
+        <script src="./javaScripts/slider.js"></script>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+    </body>
+</html>

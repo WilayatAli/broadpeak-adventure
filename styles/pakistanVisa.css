@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #004b91;
+    --red:#f9556d;
+    --green:#00AB33;
+    --drakblue: #09233b;
+}
+
+.contactbgImage{
+    background-image: url(/assests/guidBookImage/paskistanVisa-Image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 290px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.paskistanVisa h2{
+    font-size: 52px;
+    font-weight: 900;
+    text-align: center;
+    max-width: 500px;
+    margin-inline: auto;
+    font-family: "Unbounded", sans-serif;
+    color: rgb(24, 150, 24);
+    /* background-color: rgba(0, 0, 0, 0.23); */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+}
+.paskistanVisa span{
+    font-family: "Gruppo", sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    color:var(--red);
+}
+
+.pkVisaInfo {
+    width: 100%;
+    max-width: 1160px;
+    margin-inline: auto;
+    margin-top: 28px;
+    font-family: "montserrat", sans-serif !important;
+    padding-inline: 20px;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+.pkVisaInfo p{
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+    max-width: 900px;
+    line-height: 28px;
+}
+.pkVisaInfo h2, .pkinfotableContentHeading{
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--drakblue);
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+.tableOfContent{
+    margin-left: 21px;
+}
+.tableOfContent li{
+    margin-top: 12px;
+}
+.pkinfotableContentHeading{
+    font-size: 24px;
+}
+.pkVisaInfo ul{
+    color: var(--blue);
+}
+.tableOfContent li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-family: "montserrat", sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+.tableOfContent li a:hover{
+    color: #f9556d;
+}
+.pkVisaParaTwo{
+    margin-top: 20px;
+}
+.pkheadingE-visa{
+    margin-top: 12px;
+    font-weight: bolder;
+    color: var(--drakblue);
+    margin-bottom: 8px;
+}
+.howtoApply{
+    margin-top: 15px;
+    color: var(--red);
+}
+.howApplyOl li{
+    color: var(--drakblue);
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.apllnow li{
+    color: #000;
+}
+.followStep{
+    font-weight: 500 !important;
+    margin-top: 6px;
+}
+.fullDetailsPdf{
+    margin-top: 20px;
+}
+.fullDetailsPdf p{
+    margin-top: 20px;
+    font-weight: 500;
+}
+.fullDetailsPdf a{
+    color: #f9556d;
+    font-weight: 500;
+}
+.fullDetailsPdf a:hover{
+    color: #9a3443;
+}
+.eVisaCountryList{
+    margin-top: 20px;
+}
+.tableHeading h6{
+    font-size: 24px;
+    color: var(--drakblue) !important;
+    width: 100%;
+    max-width: 803px;
+    margin-top: 20px;
+}
+.eVisaCountryList{
+    overflow: auto;
+}
+.tableWrapper{
+    overflow: hidden
+}
+.eVisaTable{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 900px;
+    min-width: 900px;
+    overflow: auto;
+}
+.eVisaTable th{
+    text-align: left;
+  
+}
+.eVisaTable td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+/* tr:nth-child(even) {
+    background-color: #ddddddbb;
+  } */
+.pkOnlineVisa{
+    margin-top: 20px;
+}
+.pkOnlineVisa h3, .docuHeading{
+    color: var(--drakblue);
+}
+.pkOnlineVisa p{
+    margin-top: 8px;
+}
+.pkonlineEVisaUl{
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.docuHeading{
+    margin-top: 10px;
+}
+.pkonlineEVisaUl li{
+    margin-top: 4px;
+    color: #000;
+}
+.howToApplyPkVisa{
+    margin-top: 20px;
+}
+.howToApplyPkVisa li{
+    margin-top: 4px;
+}
+
+.beforeApplyHed{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.readyToApply{
+    padding-left: 23px;
+    margin-top: 6px;
+}
+.visapkLinks{
+    margin-top: 30px !important;
+}
+
+.pklaspara, .lasprtw{
+    margin-top: 20px;
+}
+.lastparapk{
+    margin-top: 20px !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .paskistanVisa h2 {
+        font-size: 39px;
+    }
+    .paskistanVisa span {
+        font-size: 41px;
+    }
+    .pkVisaInfo h2, .pkinfotableContentHeading {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .tableHeading h6 {
+        font-size: 20px;
+    }
+ 
+}

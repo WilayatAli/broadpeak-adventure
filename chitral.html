@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitral | BroadPeak Adventures</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- cavitFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/k2BaseCampTrek.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+    <link rel="stylesheet" href="styles/skarduDistination.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            fetch('relatedPackage.html')
+                .then(response => response.text())
+                .then(data => {
+                const relatedPlaceholder = document.getElementById('related-content-placeholder');
+                relatedPlaceholder.insertAdjacentHTML('beforebegin', data); 
+                })
+                .catch(error => console.error('Error fetching related package:', error));
+            });
+        </script>
+        <section class="topDistinationGilgitBaltistan">
+            <div class="chitralDistinationBanner">
+                <h1 class="distinationBannerHeadings">CHITRAL</h1>
+            </div>
+        </section>
+        <section class="destinationContainer">
+            <div class="imageFrameWrapper">
+                <div class="imageFrameOne">
+                <img src="./assests/images/distinationImages/chi.jpg" alt="image">
+                <div class="imageDescribtion">
+                    Chitral
+                    <span></span>
+                </div>
+                </div>
+                <div class="imageFrameOne">
+                    <img src="./assests/images/distinationImages/chirtal.jpg" alt="image">
+                    <div class="imageDescribtion">
+                        Chitral
+                        <span></span>
+                    </div>
+                </div>
+                <div class="imageFrameOne">
+                    <img src="./assests/images/distinationImages/ch.jpg" alt="image">
+                    <div class="imageDescribtion">
+                        Chitral
+                        <span></span>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <div class="paddingInline">
+            <div class="max-width">
+            <h4 class="heading text-center">Discover Chitral</h4>
+            <span class="subHeadingz">A Jewel in the Hindukush | Where Nature Meets Tradition</span>
+            <p class="text text-width">Nestled in the far northwestern corner of Pakistan's Khyber Pakhtunkhwa province, Chitral is a region of unparalleled beauty and cultural richness. Surrounded by the towering peaks of the Hindukush range, Chitral is a land of pristine landscapes, vibrant traditions, and warm hospitality. Whether you're seeking adventure in the high mountains or a glimpse into ancient cultures, Chitral has something to offer every traveler.</p>
+
+            <div class="skardu">
+                <h6 class="subHeading">The Majestic Hindukush</h6>
+                <p class="text">Chitral's geography is dominated by the majestic Hindukush Mountains, with Tirich Mir, the highest peak, reaching an astounding 7,708 meters. The region's rugged terrain provides a dramatic backdrop for exploration and adventure. Chitral is a haven for mountaineers and trekkers, offering challenging climbs and awe-inspiring treks through remote valleys and over high passes.</p>
+
+                <h6 class="subHeading">Adventure Awaits</h6>
+                <p class="text">For adventure seekers, Chitral presents a range of opportunities. Popular trekking routes lead to remote valleys like Rumbur, Bumburet, and Birir, where you can explore the unique landscapes and encounter traditional Kalasha communities. The Shandur Pass, known for hosting the annual Shandur Polo Festival, is another highlight, offering stunning views and a thrilling journey.
+                    <br><br>
+                Chitral is also home to a rich diversity of flora and fauna. The Chitral Gol National Park, with its dense forests and alpine meadows, provides a sanctuary for wildlife, including the elusive snow leopard, ibex, and markhor. Birdwatchers will also find a variety of species to observe in this untouched paradise.</p>
+
+                <h6 class="subHeading">The Unique Culture of Chitral</h6>
+                <p class="text">Chitral is not only about its natural beauty; it's also a region with a rich cultural heritage. The Kalasha people, an indigenous ethnic group, have preserved their unique customs, language, and traditions over centuries. A visit to the Kalasha valleys is like stepping into a living museum, where you can experience vibrant festivals, traditional dances, and unique rituals.
+                    <br><br>
+                Chitral Town, the region's main settlement, offers a blend of tradition and modernity. Here, you can visit the historic Chitral Fort, explore the bustling bazaar, and interact with locals to learn about their way of life. The people of Chitral are known for their hospitality and will welcome you with open arms.</p>
+                
+                <h6 class="subHeading">Scenic Beauty and Relaxation</h6>
+                <p class="text">Chitral is a place where you can relax and rejuvenate amid breathtaking scenery. The region's rivers and valleys offer tranquil settings for picnics, fishing, and leisurely walks. Visit the picturesque Garam Chashma, a hot spring known for its healing properties, or take a stroll along the Chitral River, which winds through lush landscapes.</p>
+
+                <h6 class="subHeading">Cultural Riches and Local Hospitality</h6>
+                <p class="text">Skardu's rich history and diverse culture are evident in its people, traditions, and architecture. Explore ancient monasteries and fortresses, such as Skardu Fort and Shigar Fort, which showcase the region's storied past. Experience the warmth of the local Balti people, who are known for their hospitality and unique cuisine. Don't miss the chance to try traditional Balti dishes like momos and thukpa, or to witness local festivals that celebrate the region's heritage.</p>
+
+                <h6 class="subHeading">Plan Your Visit to Chitral</h6>
+                <p class="text">Whether you're drawn to the adventure of trekking and mountaineering or the allure of a rich cultural heritage, Chitral has something for everyone. Plan your visit today and discover the magic of this hidden gem in the Hindukush. From the towering peaks to the vibrant traditions, Chitral is a destination that will leave you with unforgettable memories.</p>
+        </div>
+
+            </div>
+        </div>
+        <div class="image-gallery-container">
+            <h5 class="subHeading">Image Gallery</h5>
+            <div class="image-gallery">
+                <!-- Row 1 -->
+                <div class="gallery-row">
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                </div>
+                <!-- Row 2 -->
+                <div class="gallery-row">
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                    <img src="./assests/tempImage.jpg" alt="Image 1" class="gallery-image" />
+                </div>
+            </div>
+        </div>
+        <!-- Overlay/Modal for full-size image -->
+        <div class="image-overlay" id="image-overlay">
+            <span class="close-overlay" id="close-overlay">&times;</span>
+            <img id="full-size-image" src="" alt="Full Size Image" />
+        </div>
+        <div class="max1440">
+        <div id="related-content-placeholder"></div>
+        </div>
+        <script src="./javaScripts/slider.js"></script>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

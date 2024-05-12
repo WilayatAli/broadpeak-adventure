@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gondogoro La Trek</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/k2BaseCampTrek.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => { // Ensure script runs after DOM is fully loaded
+      fetch('relatedPackage.html') // Fetch the content from the relatedPackage.html file
+        .then(response => response.text()) // Convert the response to text
+        .then(data => {
+          const relatedPlaceholder = document.getElementById('related-content-placeholder'); // Reference to the placeholder
+          relatedPlaceholder.insertAdjacentHTML('beforebegin', data); // Insert content before the footer
+        })
+        .catch(error => console.error('Error fetching related package:', error)); // Error handling
+    });
+  </script>
+         <div class="backGroundBanner"></div>
+        <div class="pkgDetailsContainer">
+            <h3 class="mainHeading k2trekking headingThreec">Gondogoro La trek & K2 Trek</h3>
+            <div class="pkgDetailsSubContainer">
+            <div class="pkgDetailsWrapper">
+                <div class="pkgDetailsSlide">
+                    <div class="pkgDetailsSlideImage"  id="imageSlider">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/GondogoroLaTrek.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/Gondogoro.jpg" alt="">
+                    </div>
+                    <div class="pkgDetailsArrow">
+                        <img src="./assests/icons/arrowDoubleLeft.svg" alt="arrow">
+                        <img src="./assests/icons/arrowDoubleRight.svg" alt="arrow">
+                    </div>
+                </div>
+            <div class="pkgDetailsideCard">
+                <div class="heading-btn-pkg">
+                    <h1 class="subHeadings packageText">Gondogoro La trek & K2 Trek</h1>
+                    <button onclick="window.location.href='./contact.html'" class="bookPkg-btn">Book Now</button>
+                </div>
+                <h1 class="subHeadings packageText">K2 BaseCamp Trekking</h1>
+                <p class="packageText daysPkg">21 Nights - 20 Days</p>
+                <hr class="hrliine">
+                <div class="pakageInclusions sliderhidden">
+                    <ul class="smallHeadings topslide">
+                        <li><img src="./assests/pakageDetailIconAndImage/hotel.svg" alt="star hotel">
+                        ACCOMONDATION</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/car.svg" alt="transport">
+                        TRANSPORT</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/meal.svg" alt="meal">
+                        MEALS</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/guide.svg" alt="sightseeing">
+                        PROFFESIONAL GUIDES</li>
+                    </ul>
+                </div>
+                <hr class="hrliine">
+                <div class="packageText">
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Country :</p>
+                        <span class="spanTag">Pakistan</span>
+                    </div>
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Area :</p>
+                        <span class="spanTag">Gondogoro La trek & K2 Trek</span>
+                    </div>
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Tour Type :</p>
+                        <span class="spanTag">Trekking</span>
+                    </div>
+
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Duration :</p>
+                        <span class="spanTag">20 Days</span>
+                    </div>
+
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Best Season :</p>
+                        <span class="spanTag">Mid April- October</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pkgDetailsNAv"  id="stickyNav">
+                <ul class="navScroll">
+                    <li class="pkgnav-btn activeOverView"><a href="#overView">OverView</a></li>
+                    <li class="pkgnav-btn"><a href="#highlight">Highlights</a></li>
+                    <li class="pkgnav-btn"><a href="#itinerarys"> Itinerary</a></li>
+                    <li class="pkgnav-btn"><a href="#Includes">Inclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#Excludes">Exclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#FAQz">FAQ,s</a></li>
+                </ul>
+            </div>
+            <div class="pagDetailsContents">
+                <div class="PkgContentsleft">
+                   <div class="pkgContentWrapper">
+                        <div class="pkgOverviewText" id="overView">
+                            <h5 class="contentHeadings">OverView</h5>
+                            <p class="packageText">Embark on a mesmerizing journey through the rugged and awe-inspiring Karakoram Range with the Gondogoro La Pass Trek, meticulously crafted by Broad Peak Adventures. This 14-day trek is an unforgettable odyssey through one of the most breathtaking landscapes on Earth. As you set foot on this extraordinary adventure, you’ll be treated to a panoramic spectacle of majestic peaks, glaciers, and serene valleys.
+                            <br><br>
+                            <b>Into the Heart of the Karakoram:</b> We set off on an epic road journey to Askole, the last village before entering the untamed wilderness. The Braldu River becomes our companion as we hike through Jhula and reach Paiju, allowing time for acclimatization and exploration. The journey continues through Khuburse and Urdukas, each campsite more spectacular than the last. <br><br>
+                           <b>Concordia – The Throne Room of the Gods:</b>  Our trek unfolds as we navigate the mesmerizing Baltoro Glacier, leading us to the geographical heart of the Karakoram – Concordia. Here, you’ll be greeted by an astonishing 360-degree panorama of towering peaks, including the iconic K2, Broad Peak, and the Gasherbrum range. This is the kind of sight that will leave you breathless, both from the altitude and the sheer grandeur of the surroundings. <br><br>
+                           <b>Summiting Gondogoro La Pass: </b>
+                           The heart-pounding excitement continues as you tackle the challenging ascent of Gondogoro La Pass. This high-altitude pass, reaching 5,940 meters, promises an unrivaled view of K2, Broad Peak, and the entire Karakoram range. The descent into the Hushe Valley provides a whole new perspective on this mountainous wonderland, with Hushe village offering a warm welcome from the Balti people. <br><br>
+                           <b>Returning to Civilization:</b> As the trek concludes, you’ll journey from Hushe to Skardu, along the picturesque Shyok and Indus rivers, taking in the beauty of small Balti villages along the way. In Skardu, you’ll savor the luxuries of a comfortable bed and a revitalizing shower. <br><br>
+                           <b>A Lasting Memory: </b>As you wrap up your adventure with a flight back to Islamabad, you’ll carry the enduring memories of this remarkable journey in your heart. The Gondogoro La Pass Trek with Broad Peak Adventures is not just a trek; it’s an experience that etches itself into your soul.
+                            </p>
+                        </div>
+                        <!-- <div class="pkgOverviewText highLight" id="highlight">
+                            <h5 class="contentHeadings">Highlights</h5>
+                            <ul class="packageText">
+                                <li class="mb-3">
+                                    <div class="dots"></div>
+                                    Trek to the world-famous K2 Base Camp
+                                </li>
+                                <li class="mb-3">
+                                    <div class="dots"></div>
+                                    Enjoy the amazing view of the mighty K2 from base camp
+                                </li>
+                                <li class="mb-3">
+                                    <div class="dots"></div>
+                                    Travel through Skardu, Askole, Paiju, Gondogoro la and Biafo Glacier
+                                </li>
+                                <li class="mb-3">
+                                    <div class="dots"></div>
+                                    Visit the world's most rugged and remote "Karakoram" mountain range in Pakistan
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="pkgItinerarys" id="itinerarys">
+                            <h2 class="contentHeadings">Itinerary</h2>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                 <img src="./assests/icons/day.svg" alt="image">
+                                 <div>
+                                 <p class="ItineraryBold"><span>Day - 1: </span>Arrival in Islamabad</p>
+                                 <p  class="packageText">Arrive in Islamabad, Pakistan. <br>
+                                    Our team will meet you at the Islamabad International Airport. <br>
+                                    Transfer to your hotel for a restful night and a briefing about the upcoming adventure.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 2: </span>Islamabad to Skardu</p>
+                                <p  class="packageText">An early morning flight to Skardu or by road if there are no flights. <br>
+                                    Enjoy panoramic views of Nanga Parbat and other Himalayan peaks during the flight. <br>
+                                    Check in at your Skardu hotel and spend the day at leisure.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 3: </span>Skardu - Pre-Trek Preparation</p>
+                            <p  class="packageText">A day to prepare for the trek. <br>
+                                Final gear check and any last-minute purchases. <br>
+                                Explore Skardu's local bazaars and sights.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 4: </span>Skardu to Askole</p>
+                            <p  class="packageText">Drive to Askole in 4x4 jeeps, the last village before the wilderness (6-7 hours). <br>
+                                Meet our local staff and start your trek. <br>
+                                Camp in Askole.</p>
+                        </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 5: </span>Askole to Jhula</p>
+                                <p  class="packageText">Trek through picturesque landscapes along the Braldu River.
+                                    Cross the wooden bridge and camp at Jhula.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 6: </span>Jhula to Paiju</p>
+                                    <p  class="packageText">Continue trekking along the Braldu River, passing Bardumal. <br>
+                                        Reach Paiju, your campsite for the night.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day: 7: </span>Paiju (Acclimatization Day)</p>
+                                <p  class="packageText">Spend the day acclimatizing in Paiju. <br>
+                                    Explore the stunning surroundings or simply relax.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 8: </span>Paiju to Khuburse</p>
+                                <p  class="packageText">Trek deeper into the heart of the Karakoram. <br>
+                                    Set up camp at the stunning Khuburse campsite beneath the Uli Biaho Towers.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 9: </span>Khuburse to Urdukas</p>
+                                <p  class="packageText">Continue your ascent with views of Masherbrum and other peaks. <br>
+                                    Camp at Urdukas, offering breathtaking panoramic vistas.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 10: </span>Urdukas to Goro II</p>
+                                <p  class="packageText">Trek along the majestic Baltoro Glacier to reach Goro II, a high-altitude camp. <br>
+                                    Enjoy fantastic views of the glacier and peaks like Gasherbrum IV.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 11: </span>Goro II to Concordia</p>
+                                <p  class="packageText">Traverse the vast Baltoro Glacier to reach Concordia, the heart of the Karakoram. <br>
+                                    Witness a mesmerizing panorama of K2, Broad Peak, Gasherbrum I and II.
+                                    Camp at Concordia.
+                                </p>
+                            </div>
+                        </div>
+                      
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 12: </span>Concordia (Exploration Day)</p>
+                            <p  class="packageText">A day to explore the "Throne Room of the Gods," Concordia. <br>
+                                Optional excursions to Broad Peak Base Camp or other nearby attractions.
+                            </p>
+                        </div>
+                    </div>
+
+
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 13: </span>Concordia to Ali Camp</p>
+                            <p  class="packageText">Begin your journey towards Gondogoro La Pass. <br>
+                                Set up camp at Ali Camp, surrounded by rugged mountain landscapes. 
+                            </p>
+                        </div>
+                    </div>
+
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 14: </span>Ali Camp to Gondogoro La Pass and Khuspang</p>
+                            <p  class="packageText">An early start for the challenging Gondogoro La Pass (5,940m). <br>
+                                Savor breathtaking views of K2, Broad Peak, and the Karakoram range. <br>
+                                Descend to Khuspang and set up camp for your final night in the wilderness.
+                            </p>
+                        </div>
+                    </div>
+
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 15: </span>Khuspang to Hushe</p>
+                            <p  class="packageText">Descend further, transitioning to the Hushe Valley. <br>
+                                Drive to the picturesque village of Hushe. <br>
+                                Interact with the friendly locals and camp for the night.
+                            </p>
+                        </div>
+                    </div>
+
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 16: </span>Hushe to Skardu</p>
+                            <p  class="packageText">Drive through the Shyok and Indus river valleys to Skardu. <br>
+                                Recharge in your Skardu hotel with a well-deserved hot shower and comfortable bed.
+                            </p>
+                        </div>
+                    </div>
+
+
+                        <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                        <div>
+                            <p class="ItineraryBold"><span>Day - 17: </span>Explore Skardu</p>
+                            <p  class="packageText">Explore the beauty and culture of Skardu
+                            </p>
+                        </div>
+                    </div>
+                       
+                    <div class="pkgItinerayDays mb-3 alignStart">
+                        <img src="./assests/icons/day.svg" alt="image">
+                    <div>
+                        <p class="ItineraryBold"><span>Day - 18: </span>Skardu to Islamabad</p>
+                        <p  class="packageText">Fly back to Islamabad, enjoying your last views of the Karakoram. <br>
+                            Explore Islamabad or relax at your hotel.
+                        </p>
+                    </div>
+                    </div>
+                    <div class="pkgItinerayDays mb-3 alignStart">
+                        <img src="./assests/icons/day.svg" alt="image">
+                    <div>
+                        <p class="ItineraryBold"><span>Day - 19: </span>Departure</p>
+                        <p  class="packageText">Depending on your flight schedule, you may have time for last-minute shopping or sightseeing. <br>
+                        Bid farewell to Pakistan as you depart from Islamabad, concluding your unforgettable Gondogoro La Pass Trek.
+                            <br> <br>
+                        *Please note that this itinerary is subject to adjustments based on weather conditions and group preferences. Safety and acclimatization are paramount during this challenging trek, and our experienced guides will ensure your safety and enjoyment throughout the journey. We look forward to making your Gondogoro La Pass Trek with Broad Peak Adventures an incredible and unforgettable experience.
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="pkgItinerayDays mb-3 alignStart">
+                        <img src="./assests/icons/day.svg" alt="image">
+                    <div>
+                        <p class="ItineraryBold"><span>Day - 20: </span>
+                            One Spare day in case of any delays</p>
+                        <p  class="packageText">One spare day in case of any delays or issues throughout the tour.
+                        </p>
+                    </div>
+                    </div>
+                    </div>
+                        <div class="pkgOverviewText includeCustom" id="Includes">
+                            <h5 class="contentHeadings">Includes</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Experienced Guides: Knowledgeable and skilled local guides who are intimately familiar with the terrain, culture, and safety considerations of the region.
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Accommodations: Accommodation in comfortable hotels in Islamabad and Skardu before and after the trek. During the trek, high-quality tents and camping equipment are provided.
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Meals: Nutritious and delicious meals throughout the trek, including breakfast, lunch, and dinner. Special dietary requirements can be accommodated upon prior notice.</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Transportation: Airport transfers, as well as 4x4 jeep transportation to and from Askole.</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Trekking Permits: All necessary trekking permits and entry fees for the Karakoram National Park.
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Porter Services: Porters to carry group equipment, such as tents and food, allowing you to trek with a lighter load.
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Climbing Gear: Crampons for the Gondogoro La Pass climb, ensuring your safety and stability in high-altitude conditions.
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Cultural Interaction: Opportunities to engage with the warm and friendly Balti people in Hushe village and experience their traditional way of life.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pkgOverviewText includeCustom" id="Excludes">
+                            <h5 class="contentHeadings">Excludes</h5>
+                            <ul class="packageText">
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        International Flights: Airfare to and from Islamabad, Pakistan is not included in the package.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Travel Insurance: Personal travel and medical insurance is not provided. We strongly recommend purchasing comprehensive travel insurance to cover potential emergencies or trip cancellations.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Visa Fees: Any fees related to obtaining a tourist visa for Pakistan are the responsibility of the traveler.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Personal Gear: You are responsible for your personal trekking equipment, including clothing, sleeping bags, and other personal items.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Meals Outside the Trek: Meals in Islamabad and Skardu before and after the trek are not included.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Optional Excursions: Any optional side trips or additional activities not mentioned in the itinerary are at an additional cost.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Tips and Gratuities: While not mandatory, gratuities for guides, porters, and the local team are greatly appreciated for their hard work and dedication.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Unforeseen Expenses: Any additional expenses incurred due to unforeseen circumstances such as flight cancellations or delays are not included in the package.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Please review the inclusions and exclusions carefully, and ensure you have adequate insurance coverage for the trek. Feel free to contact us for any specific questions or further assistance in planning your Gondogoro La Pass Trek with Broad Peak Adventures.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- faq -->
+                        <div class="faqContainerWarrper" id="FAQz">
+                            <h2 class="contentHeadings">FAQ's</h2>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is the best time to undertake the Gondogoro La Pass Trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>The optimal time for this trek is during the summer months, from late June to early September when the weather is most stable, and the trails are accessible.
+                                     </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What is the level of difficulty for the Gondogoro La Pass Trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>This trek is considered strenuous and is best suited for experienced trekkers. The high altitude and challenging terrain require physical fitness and proper acclimatization.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How do you handle altitude sickness during the trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Our itinerary is designed with acclimatization days to help trekkers adjust to high altitudes gradually. Our experienced guides are trained to recognize and manage altitude sickness symptoms.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What should I pack for the trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>You’ll need a range of gear, including warm clothing, a good quality sleeping bag, hiking boots, and personal items. A detailed packing list will be provided upon booking.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Are porters available, and what is their load-carrying capacity?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Yes, porters are available to carry group equipment. They typically carry up to 20-25 kilograms per person, which includes camping gear and supplies.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Is travel insurance required for the trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Yes, travel insurance is mandatory. It should include coverage for medical emergencies, trip cancellations, and evacuation in case of emergencies.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How is drinking water provided during the trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>We provide purified water throughout the trek. Trekkers can also bring water purification methods or iodine tablets for extra precautions.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What are the restroom facilities during the trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Restroom facilities are basic and include outdoor, environmentally-friendly options. Trekkers should bring their own toilet paper.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Do I need to obtain permits for the trek, and are they included in the package?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Yes, you’ll need trekking permits for the Karakoram National Park. These permits are included in the package, and we will assist you in obtaining them.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Can I join a group or do I need to book the entire trek privately?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Both options are available. You can join a pre-arranged group departure or choose to book a private trek tailored to your preferred dates and group size. <br>
+
+                                    If you have additional questions or require more information about the Gondogoro La Pass Trek with Broad Peak Adventures, please don’t hesitate to reach out to our team. We are here to assist you in planning an unforgettable trekking experience.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="pkgSideContents">
+                    <div class="pkgContentSideCards">
+                        <h5>Why Broad Peak Adventure?</h5>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Experienced</h6>
+                                <p class="packageText text-center">An experienced trekking tour operator, with a team of an experienced adventure enthusiast ensure to give our clients well-designed trekking tour packages.</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Certified</h6>
+                                <p class="packageText text-center">We are certified by major tour and travel associations in Pakistan (Ministry of Tourism, Govt of Pakistan and England).</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Happy Customers</h6>
+                                <p class="packageText text-center">BroadPeak Adventure has received numerous accolades from its happy customers for its excellent services and best adventure holidays..</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Local Offices</h6>
+                                <p class="packageText text-center">We have local office in Skardu, Islamabad and England for our customers to find assistance anytime and anywhere.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div id="related-content-placeholder"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RushLake Trek</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="styles/nangaParbat.css"> -->
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => { 
+      fetch('relatedPackage.html') 
+        .then(response => response.text())
+        .then(data => {
+          const relatedPlaceholder = document.getElementById('related-content-placeholder'); 
+          relatedPlaceholder.insertAdjacentHTML('beforebegin', data); 
+        })
+        .catch(error => console.error('Error fetching related package:', error)); 
+    });
+  </script>
+         <div class="backGroundBanner"></div>
+        <div class="pkgDetailsContainer">
+            <h3 class="mainHeading k2trekking headingThreec">Rush Lake Trek</h3>
+            <div class="pkgDetailsSubContainer">
+            <div class="pkgDetailsWrapper">
+                <div class="pkgDetailsSlide">
+                    <div class="pkgDetailsSlideImage"  id="imageSlider">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/Rush-Lake-trek1.jpg" alt="image">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/rush-lake-trek2.jpg" alt="image">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/rush-lake-trek3.webp" alt="image">
+                    </div>
+                    <div class="pkgDetailsArrow">
+                        <img src="./assests/icons/arrowDoubleLeft.svg" alt="arrow">
+                        <img src="./assests/icons/arrowDoubleRight.svg" alt="arrow">
+                    </div>
+                </div>
+            <div class="pkgDetailsideCard">
+                <div class="heading-btn-pkg">
+                    <h1 class="subHeadings packageText">Rush Lake Trek</h1>
+                    <button onclick="window.location.href='./contact.html'" class="bookPkg-btn">Book Now</button>
+                </div>
+                <p class="packageText daysPkg">15 Days</p>
+                <hr class="hrliine">
+                <div class="pakageInclusions sliderhidden">
+                    <ul class="smallHeadings topslide">
+                        <li><img src="./assests/pakageDetailIconAndImage/hotel.svg" alt="star hotel">
+                        ACCOMONDATION</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/car.svg" alt="transport">
+                        TRANSPORT</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/meal.svg" alt="meal">
+                        MEALS</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/guide.svg" alt="sightseeing">
+                        PROFFESIONAL GUIDES</li>
+                    </ul>
+                </div>
+                <hr class="hrliine">
+                <div class="packageText">
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Country :</p>
+                        <span class="spanTag">Pakistan</span>
+                    </div>
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Area :</p>
+                        <span class="spanTag">Rush Lake Trek</span>
+                    </div>
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Tour Type :</p>
+                        <span class="spanTag">Trekking</span>
+                    </div>
+
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Duration :</p>
+                        <span class="spanTag">15 Days</span>
+                    </div>
+
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Best Season :</p>
+                        <span class="spanTag">Mid April- October</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pkgDetailsNAv"  id="stickyNav">
+                <ul class="navScroll">
+                    <li class="pkgnav-btn activeOverView"><a href="#overView">OverView</a></li>
+                    <li class="pkgnav-btn"><a href="#highlight">Highlights</a></li>
+                    <li class="pkgnav-btn"><a href="#itinerarys"> Itinerary</a></li>
+                    <li class="pkgnav-btn"><a href="#Includes">Inclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#Excludes">Exclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#FAQz">FAQ,s</a></li>
+                </ul>
+            </div>
+            <div class="pagDetailsContents">
+                <div class="PkgContentsleft">
+                   <div class="pkgContentWrapper">
+                        <div class="pkgOverviewText" id="overView">
+                            <h5 class="contentHeadings">OverView</h5>
+                            <p class="packageText">Explore the Rush Lake Trek, a perfect adventure for beginners in the stunning Karakoram Range. Rush Lake, one of the world's highest alpine lakes and Pakistan's highest, sits majestically at over 4,700 meters. <br><br>
+                            During the trek, soak in the breathtaking views of Nagar and Hunza Valley's towering peaks. As you hike towards Rush Lake, you'll cross glaciers, meander through high meadows, and pass terraced fields in Nagar Valley. It's a refreshing journey, immersing you in the beauty of nature's wilderness.
+                            </p>
+                        </div>
+                        <div class="pkgOverviewText highLight" id="highlight">
+                            <h5 class="contentHeadings">Highlights</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Trek to Rush Lake, one of the world's highest lakes, near the majestic Rush Pari peak.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Enjoy panoramic views of Nagar Valley's iconic peaks, including Spantik and Phuparash.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Marvel at the surrounding beauty, with glimpses of Hopper and Miar Glaciers.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Witness breathtaking vistas of the Karakoram Mountains, potentially including K2 Summit on clear days.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pkgItinerarys" id="itinerarys">
+                            <h2 class="contentHeadings">Itinerary</h2>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                 <img src="./assests/icons/day.svg" alt="image">
+                                 <div>
+                                 <p class="packageText"><span>Day - 1: </span>Arrive in Islamabad, transfer to centrally located hotel. </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="packageText"><span>Day - 2: </span>Drive to Chilas, stop at Shatial rock carving, overnight stay. </p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 3: </span>Continue to Karimabad Hunza, visit mountain range junction, check-in. </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 4: </span>Explore Baltit and Altit forts, trek along Barbar water channel. </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 5: </span>Jeep journey to Hopper Valley, overnight in simple lodge. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 6: </span>Trek to Barpo Giram campsite, stunning views of peaks.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 7: </span>Cross Barpu Glacier to Brikchour campsite. </p>
+                                </div>
+                            </div>
+                            
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 8: </span>Steep climb to Rush Lake, camping at Chiden Haral.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 9: </span>Free morning, descent to Gutons, overnight stay.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 10: </span>Return to Hopper village, drive to Gulmit, visit Attabad Lake.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 11: </span>Visit suspension bridges, Passu white glacier viewpoint, village tour.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 12: </span>Full-day excursion to Khunjerab Pass, wildlife spotting. </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 13: </span>Travel to Islamabad via scenic flight or Karakoram Highway, stay in Besham.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 14: </span>Visit Islamabad’s last minute attractions , farewell dinner (nighit in Islamabad)</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="packageText"><span>Day - 15: </span>Departure</p>
+                                </div>
+                            </div>
+                        <div class="pkgOverviewText includeCustom" id="Includes">
+                            <h5 class="contentHeadings">Includes</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Pick-up or Drop-off service from and to Airport(in our own vehicle)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Transportation to and from!!
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Food all along the trip(Breakfast, Lunch, Dinner and a cup of coffee or tea) and accommodations during the trip in hotels with family environment</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Transportation, food, accommodation and insurance of Guide during the trip                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        First Aid Medical Kit(Your guide will carry the Medical Kit but we also advise you to bring yourself for your own use, as far as possible)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        All the required permits and paperwork                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        (The services included in this trip are peak royalty fees, hotels for stays in Islamabad, Chilas, and Skardu with meals provided, air-conditioned van transportation, flight tickets, jeep transport, trekking and base camp food, porters for carrying personal gear, staffs including a guide, cook, and assistance cook, camping equipment, kitchen utensils, and general services such as tips and fees.)
+                                    </p>
+                                </li>                          
+                            </ul>
+                        </div>
+                        <div class="pkgOverviewText includeCustom" id="Excludes">
+                            <h5 class="contentHeadings">Excludes</h5>
+                            <ul class="packageText">
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        International Airfare
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Visa Charges
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Personal Expenses such as shopping, bar bills, hot shower, telephone, laundry, titbits etc
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Services not mentioned or not promised by the agent/agency
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Emergency expenses such as expenses on chartered helicopter.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Down jacket, all-season sleeping bag, duffel bag and trekking map(in case if you don’t have your own. Down jacket, sleeping bag and duffel bag must be returned after completion of the trip)
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Down jacket, all-season sleeping bag, duffel bag and trekking map(in case if you don’t have your own. Down jacket, sleeping bag and duffel bag must be returned after completion of the trip)
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                   </div>
+                    </div>
+                </div>
+                <div class="pkgSideContents">
+                    <div class="pkgContentSideCards">
+                        <h5>Why Broad Peak Adventure?</h5>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Experienced</h6>
+                                <p class="packageText text-center">An experienced trekking tour operator, with a team of an experienced adventure enthusiast ensure to give our clients well-designed trekking tour packages.</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Certified</h6>
+                                <p class="packageText text-center">We are certified by major tour and travel associations in Pakistan (Ministry of Tourism, Govt of Pakistan and England).</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Happy Customers</h6>
+                                <p class="packageText text-center">BroadPeak Adventure has received numerous accolades from its happy customers for its excellent services and best adventure holidays..</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Local Offices</h6>
+                                <p class="packageText text-center">We have local office in Skardu, Islamabad and England for our customers to find assistance anytime and anywhere.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> 
+            </div>
+        <div id="related-content-placeholder"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

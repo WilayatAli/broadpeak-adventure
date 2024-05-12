@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2-BaseCamp Trek | broadpeak Adventures</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/k2BaseCampTrek.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+        fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+    const container = document.createElement('div'); // Create a container element
+    container.innerHTML = data; // Set the container's HTML content
+    container.style.width = '100%'; // Set the width of the container
+    document.body.insertAdjacentElement('beforeend', container); // Insert the container into the body
+  });
+
+        </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => { // Ensure script runs after DOM is fully loaded
+      fetch('relatedPackage.html') // Fetch the content from the relatedPackage.html file
+        .then(response => response.text()) // Convert the response to text
+        .then(data => {
+          const relatedPlaceholder = document.getElementById('related-content-placeholder'); // Reference to the placeholder
+          relatedPlaceholder.insertAdjacentHTML('beforebegin', data); // Insert content before the footer
+        })
+        .catch(error => console.error('Error fetching related package:', error)); // Error handling
+    });
+  </script>
+         <div class="backGroundBanner"></div>
+        <div class="pkgDetailsContainer">
+            <h3 class="mainHeading k2trekking headingThreec">K2-BaseCamp Trekking</h3>
+            <div class="pkgDetailsSubContainer">
+            <div class="pkgDetailsWrapper">
+                <div class="pkgDetailsSlide">
+                    <div class="pkgDetailsSlideImage"  id="imageSlider">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/k2BaseCamp.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/k2-base-camp-trekking.jpg" alt="">
+                        <!-- <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/k2BaseCamp.jpeg" alt=""> -->
+                    </div>
+                    <div class="pkgDetailsArrow">
+                        <img src="./assests/icons/arrowDoubleLeft.svg" alt="arrow">
+                        <img src="./assests/icons/arrowDoubleRight.svg" alt="arrow">
+                    </div>
+                </div>
+            <div class="pkgDetailsideCard">
+                <div class="heading-btn-pkg">
+                    <h1 class="subHeadings packageText">K2 BaseCamp Trekking</h1>
+                    <button onclick="window.location.href='./contact.html'" class="bookPkg-btn">Book Now</button>
+                </div>
+                <p class="packageText daysPkg">21 Nights - 20 Days</p>
+                <hr class="hrliine">
+                <div class="pakageInclusions sliderhidden">
+                    <ul class="smallHeadings topslide">
+                        <li><img src="./assests/pakageDetailIconAndImage/hotel.svg" alt="star hotel">
+                        ACCOMONDATION</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/car.svg" alt="transport">
+                        TRANSPORT</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/meal.svg" alt="meal">
+                        MEALS</li>
+                        <li><img src="./assests/pakageDetailIconAndImage/guide.svg" alt="sightseeing">
+                        PROFFESIONAL GUIDES</li>
+                    </ul>
+                </div>
+                <hr class="hrliine">
+                <div class="packageText">
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Country :</p>
+                        <span class="spanTag">Pakistan</span>
+                    </div>
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Area :</p>
+                        <span class="spanTag">K2-BaseCamp Trekking</span>
+                    </div>
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Tour Type :</p>
+                        <span class="spanTag">Trekking</span>
+                    </div>
+
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Duration :</p>
+                        <span class="spanTag">21 Nights - 20 Days</span>
+                    </div>
+
+                    <div class="pakageDetailInfo">
+                        <p class="ptag">Best Season :</p>
+                        <span class="spanTag">Mid April- October</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pkgDetailsNAv"  id="stickyNav">
+                <ul class="navScroll">
+                    <li class="pkgnav-btn activeOverView"><a href="#overView">OverView</a></li>
+                    <li class="pkgnav-btn"><a href="#highlight">Highlights</a></li>
+                    <li class="pkgnav-btn"><a href="#itinerarys"> Itinerary</a></li>
+                    <li class="pkgnav-btn"><a href="#Includes">Inclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#Excludes">Exclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#FAQz">FAQ,s</a></li>
+                </ul>
+            </div>
+            <div class="pagDetailsContents">
+                <div class="PkgContentsleft">
+                   <div class="pkgContentWrapper">
+                        <div class="pkgOverviewText" id="overView">
+                            <h5 class="contentHeadings">OverView</h5>
+                            <p class="packageText">The K2 Base Camp Trek is a challenging and rewarding trek that takes visitors to the base camp of the world’s second highest mountain, K2. The trek is a strenuous and physically demanding journey that takes place in the remote and rugged region of the Karakoram mountain range in Pakistan, starting in Skardu. It takes around 8 to 10 days to reach the base camp, depending on the route and pace of the trekkers.
+                            <br><br>
+                            The trek offers a chance to see the mountain up close, take in breathtaking views of the surrounding peaks and experience local culture. It is considered challenging due to altitude and rugged terrain and requires a good level of fitness. Trekkers should also be prepared for the effects of altitude sickness.
+                            </p>
+                        </div>
+                        <div class="pkgOverviewText highLight" id="highlight">
+                            <h5 class="contentHeadings">Highlights</h5>
+                            <ul class="packageText">
+                                <li class="mb-3">
+                                    <div class="dots"></div>
+                                    Trek to the world-famous K2 Base Camp
+                                </li>
+                                <li class="mb-3">
+                                    <div class="dots"></div>
+                                    Enjoy the amazing view of the mighty K2 from base camp
+                                </li>
+                                <li class="mb-3">
+                                    <div class="dots"></div>
+                                    Travel through Skardu, Askole, Paiju, Gondogoro la and Biafo Glacier
+                                </li>
+                                <li class="mb-3">
+                                    <div class="dots"></div>
+                                    Visit the world's most rugged and remote "Karakoram" mountain range in Pakistan
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pkgItinerarys" id="itinerarys">
+                            <h2 class="contentHeadings">Itinerary</h2>
+                            <div class="pkgItinerayDays mb-3">
+                                 <img src="./assests/icons/day.svg" alt="image">
+                                 <p class="packageText"><span>Day - 1: </span> Arrive at Islamabad International Airport, Islamabad</p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 2: </span>Fly from Islamabad to Skardu</p>
+                           </div>
+                           <div class="pkgItinerayDays mb-3">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <p class="packageText"><span>Day - 3: </span>Rest and Explore Skardu</p>
+                           </div>
+                           <div class="pkgItinerayDays mb-3">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <p class="packageText"><span>Day - 4: </span>Drive from Skardu to Askole</p>
+                           </div>
+                           <div class="pkgItinerayDays mb-3">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <p class="packageText"><span>Day - 5: </span>Trek from Askole to Jhola
+                            </p>
+                           </div>
+                           <div class="pkgItinerayDays mb-3">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <p class="packageText"><span>Day - 6: </span>Trek from Jhola to Paiju
+                            </p>
+                           </div>
+                           <div class="pkgItinerayDays mb-3">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <p class="packageText"><span>Day - 7: </span>
+                                Rest day in Paiju</p>
+                           </div>
+                           <div class="pkgItinerayDays mb-3">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <p class="packageText"><span>Day - 8: </span>Trek from Paiju to Urdukas</p>
+                           </div>
+                           <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 9: </span>Trek from Urdukas to Goro II
+                                </p>
+                           </div>
+                           <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 10: </span>Trek from Goro II to Concordia
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 11: </span>Rest day in Concordia
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 12: </span>Trek from Concordia to K2 Base Camp
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 13: </span>Rest day at K2 Base Camp
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 14: </span>Trek from K2 Base Camp to Concordia
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 15: </span>Rest day in Concordia
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 16: </span> <b>Trek from Concordia to Urdukas/ Trek from Concordia to Ali Camp for Gondogoro La</b> <br>
+                                    From Concordia, if you want to go back to Skardu we will go to Urdukas. If you are interested in Gondogoro La, we will change the route and go to Ali Camp.For the Gondogoro La trek please check our K2 base camp and Gondogoro La trek.
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 17: </span>Trek from Urdukas to Paiju
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 18: </span>Trek from Piiju to Jhola
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 19: </span>Drive from Jhola to Skardu
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 20: </span>
+                                    Rest day in Skardu
+                                </p>
+                            </div>
+                            <div class="pkgItinerayDays mb-3">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <p class="packageText"><span>Day - 21: </span>Fly from Skardu to Islamabad, Departure
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pkgOverviewText includeCustom" id="Includes">
+                            <h5 class="contentHeadings">Includes</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Pick-up or Drop-off service from and to Airport(in our own vehicle)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Transportation to and from!
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Food all along the trip(Breakfast, Lunch, Dinner and a cup of coffee or tea) and accommodations during the trip in hotels with family environment</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Transportation, food, accommodation and insurance of Guide during the trip</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                    First Aid Medical Kit(Your guide will carry the Medical Kit but we also advise you to bring yourself for your own use, as far as possible)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                    All the required permits and paperwork
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        (The services included in this trip are peak royalty fees, hotels for stays in Islamabad, Chilas, and Skardu with meals provided, air-conditioned van transportation, flight tickets, jeep transport, trekking and base camp food, porters for carrying personal gear, staffs including a guide, cook, and assistance cook, camping equipment, kitchen utensils, and general services such as tips and fees.)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        In any emergency situation where helicopter assistance is needed, the company will arrange it however the client has to pay the charges.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pkgOverviewText includeCustom" id="Excludes">
+                            <h5 class="contentHeadings">Excludes</h5>
+                            <ul class="packageText">
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        International Airfare
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Visa Charges
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Personal Expenses such as shopping, bar bills, hot shower, telephone, laundry, titbits etc..
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Services not mentioned or not promised by the agent/agency.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Emergency expenses such as expenses on chartered helicopter.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Down jacket, all-season sleeping bag, duffel bag and trekking map(in case if you don’t have your own. Down jacket, sleeping bag and duffel bag must be returned after completion of the trip).
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- faq -->
+                        <div class="faqContainerWarrper" id="FAQz">
+                            <h2 class="contentHeadings">FAQ's</h2>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How fit do I need to be to do this trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>The K2 Base Camp Trek is considered a challenging trek that requires a good level of fitness. The trek is physically demanding and takes place at high altitude, so it is important to be in good physical shape before embarking on the trek.
+                                        <br> <br>
+                                    To prepare for the trek, it is recommended to engage in regular cardiovascular and strength-training exercises, such as running, cycling, or hiking. It is also important to build up endurance by gradually increasing the intensity and duration of your training.
+                                        <br> <br>
+                                    During the trek, you will be carrying a backpack and trekking for several hours a day at high altitude. This requires a good level of fitness and a strong cardiovascular system. Additionally, trekkers should be prepared to walk on uneven terrain, which may include steep inclines, rocky paths, and loose gravel.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">How long do we walk every day when doing K2 Base Camp trekking?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>The duration of the daily walk during the K2 Base Camp Trek can vary depending on the route, the pace of the trekkers, and the altitude. Typically, the trek takes around 8 to 10 days, and trekkers can expect to walk for several hours each day.
+                                        <br><br>
+                                        On average, the daily walking distance can be between 5 to 8 hours, and the distance covered can range between 10 to 20 kilometers per day. The first few days of the trek may be shorter and less strenuous, while the last few days can be longer and more challenging, as trekkers approach the base camp of K2.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What is the highest altitude reached in this trek?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>The highest altitude reached in the K2 Base Camp Trek is the base camp of K2 which is located at an altitude of 5,150 meters.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What about internet access?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>Yes. The Internet can be accessed in most places. Sometimes, there might be some technical problems. The Internet in Pakistan is not as fast as you are used to and at times you can just lose connection.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Is it necessary to hire Guides/trekking agency for K2 Base Camp trekking?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>It is not strictly necessary to hire a guide or a trekking agency for the K2 Base Camp Trek, but it is highly recommended. The trek takes place in a remote and rugged region, and it can be challenging to navigate without proper experience and knowledge of the area. 
+                                    <br> <br>
+                                    A guide or a trekking agency can provide valuable information and support during the trek, such as:
+                                    <br> <br>
+                                    Knowledge of the best routes to take, as well as knowledge of the local culture and customs. <br> <br>
+                                    Assistance in obtaining permits and visas, as well as arranging transportation and accommodation. <br> <br>
+                                    Assistance with equipment and supplies, such as providing porters, mules, or other support animals to help carry equipment. <br> <br>
+                                    Knowledge of the weather and mountain conditions, and the ability to adjust the itinerary accordingly. <br> <br>
+                                    Knowledge of first aid and emergency procedures, and the ability to handle medical emergencies. <br> <br>
+                                    An experienced guide can provide guidance and support on how to avoid and handle altitude sickness. <br> <br>
+                                    Hiring a guide or a trekking agency also helps support the local economy and ensuring fair and responsible tourism. <br> <br>
+                                    In conclusion, while it is possible to trek the K2 Base Camp without a guide or a trekking agency, it is highly recommended to hire one. A guide or a trekking agency can provide valuable information and support, as well as assistance with permits, transportation, accommodation, and equipment. They also have the knowledge of the local culture and customs, and can help to avoid and handle altitude sickness and other possible hazards.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much do guides and porters cost?</span><span class="icon" aria-hidden="true"></span></button>
+                                    <div class="accordion-content">
+                                    <p>The cost of hiring a guide and porters for the K2 Base Camp Trek can vary depending on the trekking agency, the duration of the trek, and the number of people in the group. <br> <br>
+                                    On average, hiring a guide for the K2 Base Camp Trek can cost anywhere from $30 to $50 per day. The cost of hiring a porter can also vary, but it can be around $15 to $20 per day. Keep in mind that these prices can vary depending on the agency, and it’s always a good idea to check with multiple agencies to compare prices and services.
+                                    <br> <br>
+                                    Additionally, it’s important to be aware that it’s a common practice to tip the guide and porter at the end of the trek, as it’s considered a way to show appreciation for their hard work and dedication. The amount of the tip is usually based on the individual’s discretion and the level of service provided.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="pkgSideContents">
+                    <div class="pkgContentSideCards">
+                        <h5>Why Broad Peak Adventure?</h5>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Experienced</h6>
+                                <p class="packageText text-center">An experienced trekking tour operator, with a team of an experienced adventure enthusiast ensure to give our clients well-designed trekking tour packages.</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Certified</h6>
+                                <p class="packageText text-center">We are certified by major tour and travel associations in Pakistan (Ministry of Tourism, Govt of Pakistan and England).</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Happy Customers</h6>
+                                <p class="packageText text-center">BroadPeak Adventure has received numerous accolades from its happy customers for its excellent services and best adventure holidays..</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Local Offices</h6>
+                                <p class="packageText text-center">We have local office in Skardu, Islamabad and England for our customers to find assistance anytime and anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div id="related-content-placeholder"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilgit-Baltistan | BroadPeak Adventures</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => { // Ensure script runs after DOM is fully loaded
+      fetch('relatedPackage.html') // Fetch the content from the relatedPackage.html file
+        .then(response => response.text()) // Convert the response to text
+        .then(data => {
+          const relatedPlaceholder = document.getElementById('related-content-placeholder'); // Reference to the placeholder
+          relatedPlaceholder.insertAdjacentHTML('beforebegin', data); // Insert content before the footer
+        })
+        .catch(error => console.error('Error fetching related package:', error)); // Error handling
+    });
+  </script>
+        <div class="backGroundBanner"></div>
+        <div class="pkgDetailsContainer">
+            <h3 class="mainHeading k2trekking headingThreec">Gilgit-Baltistan Tour</h3>
+            <div class="pkgDetailsSubContainer">
+            <div class="pkgDetailsWrapper">
+                <div class="pkgDetailsSlide">
+                    <div class="pkgDetailsSlideImage"  id="imageSlider">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/NangaParbat2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/nanga-parbat-baseCamp2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/Nangaparbat3.jpg" alt="">
+                    </div>
+                    <div class="pkgDetailsArrow">
+                        <img src="./assests/icons/arrowDoubleLeft.svg" alt="arrow">
+                        <img src="./assests/icons/arrowDoubleRight.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="pkgDetailsideCard">
+                    <h1 class="subHeadings packageText">Gilgit-Baltistan Tour</h1>
+                    <p class="packageText daysPkg">7 Days</p>
+                    <hr class="hrliine">
+                    <div class="pakageInclusions sliderhidden">
+                        <ul class="smallHeadings topslide">
+                            <li><img src="./assests/pakageDetailIconAndImage/hotel.svg" alt="star hotel">
+                            ACCOMONDATION</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/car.svg" alt="transport">
+                            TRANSPORT</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/meal.svg" alt="meal">
+                            MEALS</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/guide.svg" alt="sightseeing">
+                            PROFFESIONAL GUIDES</li>
+                        </ul>
+                    </div>
+                    <hr class="hrliine">
+                    <div class="packageText">
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Country :</p>
+                            <span class="spanTag">Pakistan</span>
+                        </div>
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Area :</p>
+                            <span class="spanTag">Gilgit-Baltistan</span>
+                        </div>
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Tour Type :</p>
+                            <span class="spanTag">Trekking</span>
+                        </div>
+
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Duration :</p>
+                            <span class="spanTag">14 Days</span>
+                        </div>
+
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Best Season :</p>
+                            <span class="spanTag">Mid April- October</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pkgDetailsNAv"  id="stickyNav">
+                <ul class="navScroll">
+                    <li class="pkgnav-btn activeOverView"><a href="#overView">OverView</a></li>
+                    <!-- <li class="pkgnav-btn"><a href="#highlight">Highlights</a></li> -->
+                    <li class="pkgnav-btn"><a href="#itinerarys"> Itinerary</a></li>
+                    <li class="pkgnav-btn"><a href="#Includes">Inclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#Excludes">Exclusions</a></li>
+                    <!-- <li class="pkgnav-btn"><a href="#FAQz">FAQ,s</a></li> -->
+                </ul>
+            </div>
+            <div class="pagDetailsContents">
+                <div class="PkgContentsleft">
+                   <div class="pkgContentWrapper">
+                        <div class="pkgOverviewText" id="overView">
+                            <h5 class="contentHeadings">OverView</h5>
+                            <p class="packageText">Gilgit-Baltistan is a stunning region in northern Pakistan that is renowned for its natural beauty and cultural heritage. The region is home to some of the highest peaks in the world, including K2 and Nanga Parbat, as well as beautiful valleys, glaciers, and rivers. The region’s cultural diversity is also a major draw for tourists, with influences from Central Asia, Tibet, and the Indian subcontinent. <br> <br>
+                                A typical tour of Gilgit-Baltistan might begin in the city of Gilgit, which is the largest city in the region and serves as a hub for tourism. From there, tourists can explore the region’s many natural wonders, including the Khunjerab Pass, which is the highest international border crossing in the world and provides access to China.<br> <br>Other popular tourist destinations in Gilgit-Baltistan include the Hunza Valley, which is known for its stunning scenery and historic forts and palaces, and the Skardu Valley, which is home to some of the most spectacular mountain ranges in the world. Visitors can also take part in a range of outdoor activities, such as hiking, mountain biking, and rafting, or immerse themselves in the region’s rich cultural heritage by visiting traditional villages and attending local festivals. <br> <br>
+                                Overall, a tour of Gilgit-Baltistan is a once-in-a-lifetime experience that combines breathtaking natural beauty with rich cultural traditions, making it an unforgettable destination for any traveler.
+                        </div>
+                        <!-- <div class="pkgOverviewText highLight" id="highlight">
+                            <h5 class="contentHeadings">Highlights</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Trek to Rush Lake, one of the world's highest lakes, near the majestic Rush Pari peak.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Enjoy panoramic views of Nagar Valley's iconic peaks, including Spantik and Phuparash.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Marvel at the surrounding beauty, with glimpses of Hopper and Miar Glaciers.</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText">Witness breathtaking vistas of the Karakoram Mountains, potentially including K2 Summit on clear days.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="pkgItinerarys" id="itinerarys">
+                            <h2 class="contentHeadings">Itinerary</h2>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                 <img src="./assests/icons/day.svg" alt="image">
+                                 <div>
+                                 <p class="ItineraryBold"><span>Day - 1: </span>ARRIVAL DAY IN ISLAMABAD, PAKISTAN</p>
+                                 <p  class="packageText">Arrival in Islamabad, Pakistan. Meet and greet with the guide at the airport and transfer to the hotel. Group briefing about the tour in the evening.<br>
+                                    Arrival in Islamabad, Pakistan. Meet and greet with the guide at the airport and transfer to the hotel. Group briefing about the tour in the evening.<br>Please note that this itinerary is just a general guideline and may vary based on weather conditions, road conditions, and other factors. It is always best to consult with our team to ensure a safe and enjoyable trip.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 2: </span>
+                                    ISLAMABAD TO NARAN/CHILAS (461 km)</p>
+                                <p  class="packageText">Drive from Islamabad to Naran/Chilas (461 km) for 8 hours. Travel on the famous Karakoram Highway and pass through some historic towns and cities. Night stay in Naran. </p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 3: </span>NARAN TO GILGIT, (134 km)</p>
+                            <p  class="packageText">Drive from Naran to Gilgit (134 km) for 6 hours. Drive on Naran road, cross Babusar Pass and rejoin the Karakoram Highway. Night stay in Gilgit. </p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 4: </span>GILGIT TO KARIMABAD (102 km)</p>
+                            <p  class="packageText">Drive from Gilgit to Karimabad (102 km) for 3 hours. Rejoin the Karakoram Highway to Hunza Valley. Visit the Rakaposhi viewpoint on the side of the Karakoram Highway. Night stay in Karimabad.</p>
+                        </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 5: </span>
+                                    KARIMABAD (2,440 meters)</p>
+                                <p  class="packageText">Explore Karimabad. Experience a spectacular sunrise view over the Rakaposhi mountain. Visit Baltit Fort and Altit Fort. Later in the afternoon, travel to a place called Eagle Nest for a breathtaking sunset view over Rakaposhi mountain.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 6: </span>KARIMABAD TO KHUNJERAB PASS (4,880 meters)</p>
+                                    <p  class="packageText">Drive from Karimabad to Khunjerab Pass (4,880 meters) for 3 hours. Visit the trade border between China and Pakistan. Return to Passu for the night stay.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 7: </span> HUNZA TO SKARDU (286 km)</p>
+                                    <p  class="packageText">Drive from Hunza to Skardu (286 km) for 7 hours. Follow the famous Karakoram Highway with the view of Rakaposhi in the background. Night stay in Skardu.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 8</span>
+                                        EXPLORE SKARDU (2,230 meters)</p>
+                                    <p  class="packageText">Explore Skardu. Visit Shangrila Resort, Upper Kachura Lake, and Skardu Fort, Sadpara Lake and Buddha Rock.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 9: </span>SKARDU TO KHAPLU, (103 km)</p>
+                                    <p  class="packageText">On Day 9 of the Gilgit Baltistan tour, you will travel from Skardu to Khaplu, a journey of around 103 km that should take 2-3 hours by car. You'll travel through some green villages along the Indus and Shyok rivers before arriving in Khaplu, the former second-largest kingdom in the old Baltistan region. You'll stay at the ex-royal palace, which has been turned into a luxury hotel (Serena Hotel).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 10: </span>EXPLORE KHAPLU (2,600 meters)</p>
+                                    <p  class="packageText">On Day 10, you'll visit the local bazaar, explore the town and see the 700-year-old Chaqchan Mosque. Afterwards, you'll spend the night in the hotel and enjoy three meals.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 11: </span>
+                                        KHAPLU TO SKARDU VIA SHIGAR</p>
+                                    <p  class="packageText">On Day 11, you'll travel from Khaplu to Skardu via Shigar, stopping to see the Shigar Fort, which has also been converted into a museum and luxury hotel (Serena Hotel). You'll have lunch in the royal garden before continuing to Skardu. You can choose to spend the night at either the Shigar Fort or the hotel in Skardu.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 12: </span>SKARDU TO ASTORE (265 km)</p>
+                                    <p  class="packageText">Day 12 is the most adventurous day of the tour, as you'll travel in a jeep to Astore via the Deosai Plateau, the world's second-highest plateau. You'll stop for lunch and sightseeing in Deosai before continuing to Astore for the night.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 13: </span>Day 13 :
+                                        ASTORE TO ISLAMABAD (461 km)</p>
+                                    <p  class="packageText">On Day 13, you'll wake up early to see a beautiful sunrise over the Karakoram Mountains and Nanga Parbat. You'll then travel from Astore to Islamabad, a journey of around 461 km that should take around 9 hours by car. You'll travel through some culturally rich and historical towns, including Taxila, an important archaeological site of ancient India. You'll arrive in Islamabad late in the afternoon and enjoy dinner at the hotel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 14: </span>DEPARTURE FROM ISLAMABAD</p>
+                                    <p  class="packageText">On Day 14, you'll be transferred to Islamabad International Airport for your flight home, marking the end of your Gilgit Baltistan tour in Pakistan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Included/NotIncluded -->
+                        <div class="pkgOverviewText includeCustom" id="Includes">
+                            <h5 class="contentHeadings">What's Included:</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Pick-up or Drop-off service from and to Airport(in our own vehicle)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Transportation to and from!!
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Food all along the trip(Breakfast, Lunch, Dinner and a cup of coffee or tea) and accommodations during the trip in hotels with family environment</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Transportation, food, accommodation and insurance of Guide during the trip</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        First Aid Medical Kit(Your guide will carry the Medical Kit but we also advise to bring yourself for your own use, as far as possible)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        All the required permits and paperwork
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pkgOverviewText includeCustom" id="Excludes">
+                            <h5 class="contentHeadings">What's Not Included</h5>
+                            <ul class="packageText">
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Visa Charges
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Hotel early check in and late check out.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Charges incurred as a result of delays beyond the control of Broad Peak Adventures.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Extra days beyond the specified itinerary.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Personal Expenses such as shopping, bar bills, hot shower, telephone, laundry, titbits etc
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Emergency expenses such as expenses on chartered helicopter.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Services not mentioned or not promised by the agent/agency
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pkgSideContents">
+                    <div class="pkgContentSideCards">
+                        <h5>Why Broad Peak Adventure?</h5>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Experienced</h6>
+                                <p class="packageText text-center">An experienced trekking tour operator, with a team of an experienced adventure enthusiast ensure to give our clients well-designed trekking tour packages.</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Certified</h6>
+                                <p class="packageText text-center">We are certified by major tour and travel associations in Pakistan (Ministry of Tourism, Govt of Pakistan and England).</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Happy Customers</h6>
+                                <p class="packageText text-center">BroadPeak Adventure has received numerous accolades from its happy customers for its excellent services and best adventure holidays..</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Local Offices</h6>
+                                <p class="packageText text-center">We have local office in Skardu, Islamabad and England for our customers to find assistance anytime and anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </div>
+            <div id="related-content-placeholder"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>

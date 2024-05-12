@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NangaParbat BaseCamp Trek</title>
+    <!-- font-Montsserat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font-openSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- roboto-slab-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Birthstone+Bounce:wght@400;500&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Days+One&family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- font-Unbounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/nangaParbat.css">
+    <link rel="stylesheet" href="styles/commonPkgDetails.css">
+</head>
+    <body>
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+        });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => { 
+      fetch('relatedPackage.html')
+        .then(response => response.text()) 
+        .then(data => {
+          const relatedPlaceholder = document.getElementById('related-content-placeholder');
+          relatedPlaceholder.insertAdjacentHTML('beforebegin', data);
+        })
+        .catch(error => console.error('Error fetching related package:', error));
+    });
+  </script>
+         <div class="backGroundBanner"></div>
+        <div class="pkgDetailsContainer">
+            <h3 class="mainHeading k2trekking headingThreec">Nanga Parbat Base Camp Trek – 8,126 m (26,660 ft)</h3>
+            <div class="pkgDetailsSubContainer">
+            <div class="pkgDetailsWrapper">
+                <div class="pkgDetailsSlide">
+                    <div class="pkgDetailsSlideImage"  id="imageSlider">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/NangaParbat2.jpg" alt="">
+                        <img class="slideActiveImage" src="./assests/pakageDetailIconAndImage/nanga-parbat-baseCamp2.jpg" alt="">
+                    </div>
+                    <div class="pkgDetailsArrow">
+                        <img src="./assests/icons/arrowDoubleLeft.svg" alt="arrow">
+                        <img src="./assests/icons/arrowDoubleRight.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="pkgDetailsideCard">
+                    <div class="heading-btn-pkg">
+                        <h1 class="subHeadings packageText">Nanga Parbat Base Camp Trek (26,660 ft)</h1>
+                        <button onclick="window.location.href='./contact.html'" class="bookPkg-btn">Book Now</button>
+                    </div>
+                    <p class="packageText daysPkg">12 Nights - 11 Days</p>
+                    <hr class="hrliine">
+                    <div class="pakageInclusions sliderhidden">
+                        <ul class="smallHeadings topslide">
+                            <li><img src="./assests/pakageDetailIconAndImage/hotel.svg" alt="star hotel">
+                            ACCOMONDATION</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/car.svg" alt="transport">
+                            TRANSPORT</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/meal.svg" alt="meal">
+                            MEALS</li>
+                            <li><img src="./assests/pakageDetailIconAndImage/guide.svg" alt="sightseeing">
+                            PROFFESIONAL GUIDES</li>
+                        </ul>
+                    </div>
+                    <hr class="hrliine">
+                    <div class="packageText">
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Country :</p>
+                            <span class="spanTag">Pakistan</span>
+                        </div>
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Area :</p>
+                            <span class="spanTag">Nanga Parbat Base Camp Trek</span>
+                        </div>
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Tour Type :</p>
+                            <span class="spanTag">Trekking</span>
+                        </div>
+
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Duration :</p>
+                            <span class="spanTag">11 Days</span>
+                        </div>
+
+                        <div class="pakageDetailInfo">
+                            <p class="ptag">Best Season :</p>
+                            <span class="spanTag">Mid April- October</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pkgDetailsNAv"  id="stickyNav">
+                <ul class="navScroll">
+                    <li class="pkgnav-btn activeOverView"><a href="#overView">OverView</a></li>
+                    <li class="pkgnav-btn"><a href="#highlight">Highlights</a></li>
+                    <li class="pkgnav-btn"><a href="#itinerarys"> Itinerary</a></li>
+                    <li class="pkgnav-btn"><a href="#Includes">Inclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#Excludes">Exclusions</a></li>
+                    <li class="pkgnav-btn"><a href="#FAQz">FAQ,s</a></li>
+                </ul>
+            </div>
+            <div class="pagDetailsContents">
+                <div class="PkgContentsleft">
+                   <div class="pkgContentWrapper">
+                        <div class="pkgOverviewText" id="overView">
+                            <h5 class="contentHeadings">OverView</h5>
+                            <p class="packageText">Experience the thrill of trekking to the base camp of one of the world’s most challenging peaks, Nanga Parbat, on a guided trek that takes you through Pakistan’s western Himalayas. The Nanga Parbat trek, starting from Gilgit (depending by air or by road), offers breathtaking views of the mountain and other peaks in the range as you trek through the beautiful Rupal and Rakhiot valleys. Led by experienced local guides, the trek provides an authentic and unique experience of Pakistan’s natural beauty, culture, and history. With a duration of 10-13 days, the trek can be adjusted based on weather conditions and the fitness level of the participants. A challenging trek, it is recommended that trekkers are in good physical shape and well-equipped with proper gear before embarking on this adventure. Book your Nanga Parbat trek now and discover the hidden gems of Pakistan’s western Himalayas.
+                            </p>
+                        </div>
+                        <div class="pkgOverviewText highLight" id="highlight">
+                            <h5 class="contentHeadings">Highlights</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText"> Drive through the Karakoram Highway</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText"> Night stays at Fairy Meadows</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText"> Beautiful views of Passu Cones, Hussaini Suspension Bridge and many more</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText"> Jeep Safari
+                                    </p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText"> Explore traditional villages and learn about local culture and way of life</p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText"> See glaciers, lakes and rivers along the way
+                                    </p>
+                                </li>
+                                <li class="mb-3 alignStart">
+                                    <div class="dots"></div>
+                                    <p class="packageText"> Led by experienced local guides for an authentic experience.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pkgItinerarys" id="itinerarys">
+                            <h2 class="contentHeadings">Itinerary</h2>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                 <img src="./assests/icons/day.svg" alt="image">
+                                 <div>
+                                 <p class="ItineraryBold"><span>Day - 1: </span>Arrival in Islamabad and transfer to hotel</p>
+                                 <p  class="packageText">Arrive in Islamabad and meet our team.
+                                    Relax and explore Islamabad</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 2: </span>Drive to Chilas and overnight stay/ Fly to Gilgit and overnight stay</p>
+                                <p  class="packageText">Begin the scenic drive to Chilas, a gateway to the Himalayas, passing through picturesque valleys and charming villages. Overnight stay in Chilas.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 3: </span>Chilas to Fairy Meadows (Nanga Parbat Base Camp) (120 km), 5 hours drive</p>
+                            <p  class="packageText">Continue your journey to Fairy Meadows, the starting point for the trek to Nanga Parbat Base Camp. Experience breathtaking views of Nanga Parbat en route. Reach Fairy Meadows, surrounded by lush meadows with an unobstructed view of the majestic peak.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                            <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                            <p class="ItineraryBold"><span>Day - 4: </span>Day 4 :
+                                Fairy Meadows to Beyal Camp (6 km), 3-4 hours trek</p>
+                            <p  class="packageText">Embark on a trek to Beyal Camp, a picturesque location offering stunning vistas of Nanga Parbat. Enjoy the serene atmosphere and get acclimatized for the further ascent.</p>
+                        </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                <p class="ItineraryBold"><span>Day - 5: </span>Beyal Camp to Nanga Parbat Base Camp (4 km), 3 hours trek</p>
+                                <p  class="packageText">Hike to Nanga Parbat Base Camp, an awe-inspiring location at the foot of the mighty mountain. Immerse yourself in the grandeur of the surroundings and witness the sheer scale of Nanga Parbat.</p>
+                               </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                                <div>
+                                    <p class="ItineraryBold"><span>Day - 6: </span>Day 6 :
+                                        Nanga Parbat Base Camp (Exploration Day)</p>
+                                    <p  class="packageText">Take a day to explore the base camp, surrounded by glaciers and towering peaks. Capture the beauty of Nanga Parbat and its glaciers in your memories.</p>
+                                </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 7: </span>Day 7 :
+                                    Beyal Camp to Fairy Meadows (6 km), 2-3 hours trek</p>
+                                <p  class="packageText">Descend back to Fairy Meadows, enjoying the stunning landscapes. Relax and reflect on the accomplishment of reaching Nanga Parbat Base Camp.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 8: </span>Fairy Meadows to Chilas (120 km), 5 hours drive</p>
+                                <p  class="packageText">Begin the return journey to Chilas, relishing the memories of your Nanga Parbat adventure. Overnight stay in Chilas.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 9: </span>Chilas to Islamabad (450 km), 11 hours drive</p>
+                                <p  class="packageText">Drive back to Islamabad, marking the end of your Nanga Parbat Base Camp expedition. Reflect on the unforgettable experiences and share stories with your fellow trekkers.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 10: </span>Day 10 :
+                                    Islamabad (Rest and Leisure Day)</p>
+                                <p  class="packageText">Take a day to rest and explore Islamabad. Visit local markets, historical sites, or simply unwind before your next adventure.</p>
+                            </div>
+                            </div>
+                            <div class="pkgItinerayDays mb-3 alignStart">
+                                <img src="./assests/icons/day.svg" alt="image">
+                            <div>
+                                <p class="ItineraryBold"><span>Day - 11: </span>Islamabad Departure</p>
+                                <p  class="packageText">Bid farewell to Pakistan's capital as you depart for your onward journey, carrying the memories of an epic Nanga Parbat expedition.
+                                <br> <br>
+                                (Note: The itinerary is subject to change based on weather conditions and the group's acclimatization, and all the times are approximate and subject to change.)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="pkgOverviewText includeCustom" id="Includes">
+                            <h5 class="contentHeadings">Includes</h5>
+                            <ul class="packageText">
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Pick-up or Drop-off service from and to Airport(in our own vehicle)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        Transportation to and from!!
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Food all along the trip(Breakfast, Lunch, Dinner and a cup of coffee or tea) and accommodations during the trip in hotels with family environment</p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">Transportation, food, accommodation and insurance of Guide during the trip                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        First Aid Medical Kit(Your guide will carry the Medical Kit but we also advise you to bring yourself for your own use, as far as possible)
+                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        All the required permits and paperwork                                    </p>
+                                </li>
+                                <li class="mb-3 includeCustom alignStart">
+                                    <img src="./assests/icons/tic.svg" alt="icon">
+                                    <p class="packageText">
+                                        (The services included in this trip are peak royalty fees, hotels for stays in Islamabad, Chilas, and Skardu with meals provided, air-conditioned van transportation, flight tickets, jeep transport, trekking and base camp food, porters for carrying personal gear, staffs including a guide, cook, and assistance cook, camping equipment, kitchen utensils, and general services such as tips and fees.)
+                                    </p>
+                                </li>                          
+                            </ul>
+                        </div>
+                        <div class="pkgOverviewText includeCustom" id="Excludes">
+                            <h5 class="contentHeadings">Excludes</h5>
+                            <ul class="packageText">
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        International Airfare
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Visa Charges
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Personal Expenses such as shopping, bar bills, hot shower, telephone, laundry, titbits etc
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Services not mentioned or not promised by the agent/agency
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Emergency expenses such as expenses on chartered helicopter.
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Down jacket, all-season sleeping bag, duffel bag and trekking map(in case if you don’t have your own. Down jacket, sleeping bag and duffel bag must be returned after completion of the trip)
+                                    </p>
+                                </li>
+                                <li class="includeCustom mb-3 alignStart">
+                                    <img src="./assests/icons/excludeIcon.svg" alt="icon">
+                                    <p class="packageText">
+                                        Down jacket, all-season sleeping bag, duffel bag and trekking map(in case if you don’t have your own. Down jacket, sleeping bag and duffel bag must be returned after completion of the trip)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                   </div>
+                </div>
+                <div class="pkgSideContents">
+                    <div class="pkgContentSideCards">
+                        <h5>Why Broad Peak Adventure?</h5>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Experienced</h6>
+                                <p class="packageText text-center">An experienced trekking tour operator, with a team of an experienced adventure enthusiast ensure to give our clients well-designed trekking tour packages.</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Certified</h6>
+                                <p class="packageText text-center">We are certified by major tour and travel associations in Pakistan (Ministry of Tourism, Govt of Pakistan and England).</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Happy Customers</h6>
+                                <p class="packageText text-center">BroadPeak Adventure has received numerous accolades from its happy customers for its excellent services and best adventure holidays..</p>
+                            </div>
+                        </div>
+                        <div class="pkgCradExperienced">
+                            <img src="./assests/icons/cheaked.svg" alt="">
+                            <div>
+                                <h6 class="normalHeadings text-center">Local Offices</h6>
+                                <p class="packageText text-center">We have local office in Skardu, Islamabad and England for our customers to find assistance anytime and anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div id="related-content-placeholder"></div>
+        </div>
+        <script src="script.js"></script>
+        <script src="./javaScripts/mobileNav.js"></script>
+
+    </body>
+</html>
