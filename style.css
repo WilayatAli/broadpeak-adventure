@@ -586,4 +586,7 @@
   .cardImgFrame {
    height: 260px;
 }
+.pakagesCardContainer {
+   padding-inline: 30px;
+}
 }
