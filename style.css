@@ -605,4 +605,8 @@
    font-size: 19px;
    line-height: 30px;
 }
+.cardParagraph {
+   font-size: 15px;
+   line-height: 25.5px;
+}
 }
