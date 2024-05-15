@@ -333,6 +333,7 @@
    top: 0;
    left: 0; */
    overflow: hidden;
+   border-bottom: 3px solid orange;
 }
 
 
@@ -349,6 +350,9 @@
    position: relative;
    padding: 13px 15px 15px;
    /* margin-top: 210px; */
+}
+.cardwrapper:hover .cardheadings{
+   color: var(--blue);
 }
 .cardheadings{
    font-family: "Roboto Slab", serif !important;
@@ -588,5 +592,13 @@
 }
 .pakagesCardContainer {
    padding-inline: 30px;
+}
+.cardContents {
+   position: relative;
+   padding: 32px 15px 36px;
+}
+.card-Book-btns {
+   margin-top: 40px;
+   width: 100%;
 }
 }
