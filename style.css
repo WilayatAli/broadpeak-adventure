@@ -582,6 +582,8 @@
     }
     .cardwrapper {
       max-width:  100%;
-      min-height: 520px;
   }
+  .cardImgFrame {
+   height: 260px;
+}
 }
