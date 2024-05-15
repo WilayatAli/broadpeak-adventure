@@ -173,10 +173,13 @@
    outline: none;
    color: #000;
    background-color: #dcdcdcd7;
+   user-select: none;
  }
  
  .searchTerm:focus{
    color: #000;
+   user-select: none;
+   user-select: none;
  }
  
  .searchButton {
@@ -519,6 +522,15 @@
 .searchTerm{
    touch-action: manipulation;
 }
+
+.cardParagraph{
+   font-family: "montserrat", sans-serif !important;
+   font-size: 12px;
+   line-height: 19.5px;
+   color: #454545 !important;
+   margin-block: 12px;
+   min-height: 65px;
+}
 /* mediaQuery */
 /* @media only screen and (max-width: 1400px) {...} */
 @media only screen and (max-width: 1200px) {
@@ -568,4 +580,7 @@
    .wrap{
       width: 80%;
     }
+    .cardwrapper {
+      max-width:  100%;
+  }
 }
