@@ -601,4 +601,8 @@
    margin-top: 40px;
    width: 100%;
 }
+.cardheadings {
+   font-size: 19px;
+   line-height: 30px;
+}
 }
