@@ -305,7 +305,7 @@
    position: relative;
    transition: .6s ease-in-out;
    animation: scale 2s ease-in-out;
-
+   text-decoration: none;
 }
 
 @keyframes scale{
@@ -375,13 +375,19 @@
    margin-block: 12px;
    min-height: 65px;
 }
-.cardParagraph a{
+
+.cardParagraph a,
+.cardParagraph span
+{
    font-style: italic;
    font-weight: 500;
    color: var(--red);
    padding-left: 3px;
    text-decoration: none;
    transition: all 0.4s ease;
+}
+.cardParagraph span:hover{
+   color: var(--blue);
 }
 .cardParagraph a:hover{
    color: var(--blue);
@@ -534,6 +540,11 @@
    color: #454545 !important;
    margin-block: 12px;
    min-height: 65px;
+}
+.cardwrapper hr {
+   color: #cccc;
+    text-decoration: none;
+    opacity: 0.4;
 }
 /* mediaQuery */
 /* @media only screen and (max-width: 1400px) {...} */

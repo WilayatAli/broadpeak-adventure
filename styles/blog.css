@@ -65,7 +65,7 @@ body{
 .blogCrad{
     width: 100%;
     max-width: 360px;
-    height: 508.03px;
+    /* height: 508.03px; */
     /* padding-inline: 15px; */
     position: relative;
     overflow: hidden;
