@@ -98,17 +98,28 @@
                                     <div class="inputWrapper">
                                         <div class="inputs">
                                             <label for="fname">First name:</label><br>
-                                            <input type="text" id="fname" name="fname" placeholder="first name">
+                                            <input type="text" id="fname" name="fname" placeholder="first name" required>
                                         </div>
                                         <div  class="inputs">
                                             <label for="lname">Last name:</label> <br>
                                             <input type="text" id="lname" name="lname" placeholder="last name">
                                         </div>
                                     </div>
-                                    <div class="subjectFeild">
-                                        <label for="fname">Subject:</label><br>
-                                        <input type="text" id="fname" name="fname" placeholder="Subject">
+
+                                    <div class="inputWrapper">
+                                        <div class="inputs">
+                                            <label for="fname">E-mail:</label><br>
+                                            <input type="mail" id="fname" name="fname" placeholder="Your mail" required>
+                                        </div>
+                                        <div  class="inputs">
+                                            <label for="lname">Subject:</label> <br>
+                                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                                        </div>
                                     </div>
+                                    <!-- <div class="">
+                                        <label for="fname">Subject:</label><br>
+                                        
+                                    </div> -->
         
                                     <div class="textArea" action="/action_page.php">
                                         <textarea id="w3review" name="w3review" rows="6" cols="30">Your Message......</textarea>
