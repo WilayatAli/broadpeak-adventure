@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #004b91;
+    --red:#f9556d;
+    --green:#00AB33;
+    --drakblue: #09233b;
+    --btn-color:#FFBA08;
+}
+.blogTopBanner {
+    background: linear-gradient(to right, #000000, #feb47b);
+    position: relative; /* Establish context for absolute positioning */
+    /* background-image: url('/assests/images/aboutUsIMages/our-teamsBanner.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #20202054;
+}
+
+.blogTopBannerPara h4{
+    color: #e1e1e1;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    max-width: 380px;
+}
+.blogTopBannerPara span{
+    color: #FFBA08;
+}
+.mianBannerBlogImages{
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.mianBannerBlogImages img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.blogContainer{
+    width: 100%;
+    max-width: 1340px;
+    margin-inline: auto;
+    font-family: "Poppins", sans-serif !important;
+}
+.blogSubContainer{
+    padding: 60px 40px 40px;
+}
+.blogContentWrapper{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.blogContents{
+    width: 100%;
+    max-width: 65%;
+}
+.blogSideBar{
+    width: 100%;
+    max-width: 27%;
+}
+.contentImageText{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+.contentImage{
+    width: 100%;
+    min-width: 260px;
+    height: 247px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.k2Image{
+    background-image: url(/assests/guidBookImage/broadPeakImages/K2-image1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.blogHeading {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    color: var(--drakblue);
+    margin-bottom: 16px;
+}
+.textWidth{
+    max-width: 530px;
+    width: 100%;
+}
+.blogText{
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.mt-5{
+    margin-top: 20px;
+}
+
+.blogSideBar{
+    width: 100%;
+    max-width: 410px;
+    background-color: #202020;
+    border-radius: 8px;
+    height: max-content;
+}
+.blogSideBarPadding{
+    padding: 0px 30px 30px;
+    width: 100%;
+    max-height: 700px;
+    overflow-y: auto;
+}
+.bg-black{
+    width: 100%;
+    background-color: #202020;
+    position: sticky;
+    top: 0;
+    padding-top: 40px;
+}
+.blogSideBarPadding{
+    position: relative;
+    top: 0;
+}
+.searchBarblog{
+   position: relative;
+}
+.searchBarblog input{
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 60px;
+    outline: none;
+    padding: 0 15px;
+    border: none;
+   
+}
+.searchBarblog img{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 30px;
+    cursor: pointer;
+}
+.resendPostWrapper{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.resenPostContent a{
+    text-decoration: none;
+}
+.recentPHeading{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 24px;
+    padding-bottom: 10px;
+}
+.recentPostImage{
+    width: 120px;
+    height: 70px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.recentPostImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blogPostDate img{
+    width: 14px;
+}
+.blogPostDate{
+    display: flex;
+    gap: 5px;
+}
+.recentPostHeading{
+    font-size: 15px;
+    font-weight: 500;
+    color: #ddd;
+    line-height: 26px;
+    transition: 0.4s;
+}
+.resendPostWrapper:hover .recentPostHeading{
+    color: #F4C24A;
+}
+.blogDateText{
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Category */
+.categoryContainer{
+    padding: 30px;
+}
+.recentCategory{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.categoryList{
+    margin-left: 18px;
+}
+.categoryList ul{
+    color: #fff;
+}
+.categoryListUl{
+    margin-top: 10px;
+}
+.categoryList ul li{
+    margin-bottom: 6px;
+}
+.categoryList ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+.categoryListUl li a:hover{
+    color: #FFBA08;
+}
+/* tagsRecentPost */
+.tagsRecentPost{
+    padding: 5px 30px 30px;
+}
+.ulTags{
+    margin-top: 16px;
+}
+.ulTags li{
+   padding: 12px;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+.tagsRecentPostLi{
+    padding: 8px 8px;
+    border-radius: 4px;
+    background-color: #d8d8d840;
+    display: inline-flex;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 300;
+    transition: .5s ease;
+}
+.tagsRecentPostLi:hover{
+    background-color: #000000;
+}
+
+@media only screen and (max-width:991px){
+    .blogContentWrapper{
+        flex-direction: column;
+    }
+    .blogContents {
+        max-width: 100%;
+    }
+    .blogSideBar {
+        width: 100%;
+        max-width: 100%;
+    }
+    .blogSideBarPadding{
+        max-height: unset;
+    }
+    .resendPostWrapper{
+        align-items: unset;
+    }
+    .blogSideBarPadding{
+        padding: 0px 15px 30px;
+    }
+    .blogSubContainer{
+        padding: 60px 20px 40px;
+    }
+}
+@media only screen and (max-width:600px){
+    .resendPostWrapper{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .recentPostImage{
+        width: 100%;
+        height: 220px;
+    }
+    .blogTopBannerPara h4{
+        padding-inline: 10px;
+    }
+    .blogHeading {
+        font-size: 20px;
+    }
+}
