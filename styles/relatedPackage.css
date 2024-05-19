@@ -33,7 +33,7 @@
 }
 .cardwrapper {
     width: 100%;
-    min-width: 277.5px;
+    min-width: 300px;
     height: auto;
     background-color: #fff;
     margin-bottom: 40px;
@@ -41,10 +41,9 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     overflow: hidden;
     position: relative;
-    animation: scrollz 50s linear infinite;
+    animation: scrollz 60s linear infinite;
 }
 .relatedPackageContainere h5{
-
     font-size: 26px;
     line-height: 32px;
     color: #3B404B;
@@ -71,6 +70,6 @@
     min-height: 38px !important;
 }
 
-.accordion-item .icon {
+/* .accordion-item .icon {
     right: -29px !important;
-}
+} */

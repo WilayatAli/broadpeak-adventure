@@ -122,7 +122,7 @@ body{
 .blogCrad:hover .blog-image-6 {
     transform: scale(1.2);
 }
-.blogCrad:hover .blogCardHeading a {
+.blogCrad:hover .blogCardHeading  {
     color: #ffb400;
 }
 .blogCardContents{
@@ -135,13 +135,16 @@ body{
     line-height: 26px;
     font-weight: 700;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
-.blogCardHeading a{
+.blogCardHeading{
     text-decoration: none;
     color: #776F5B;
     transition: .5s;
 }
-
+.blogCrad a{
+    text-decoration: none;
+}
 .blog-card-para{
     font-size: 15px;
     line-height: 27px;
