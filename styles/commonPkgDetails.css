@@ -423,19 +423,13 @@
   /* margin: 4px auto; */
   width: 90%;
 }
-.faqContainerWrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.faqPara {
+.faqPara{
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 23px;
   color: #000;
   font-weight: 500;
 }
-
 .accordion {
   .accordion-item {
     border-bottom: 1px solid var(--lightgray);
@@ -443,7 +437,6 @@
       border-bottom: 1px solid #FFBA08;
     }
   }
-
   button {
     position: relative;
     display: block;
@@ -456,9 +449,7 @@
     border: none;
     background: none;
     outline: none;
-
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       cursor: pointer;
       color: var(--green);
       &::after {
@@ -467,13 +458,11 @@
         border: 1px solid #FFBA08;
       }
     }
-
     .accordion-title {
       padding: 1em 1.5em 1em 0;
-      font-family: "Montserrat", sans-serif;
+      font-family: "montserrat", sans-serif;
       font-weight: 400;
     }
-
     .icon {
       display: inline-block;
       position: absolute;
@@ -483,7 +472,6 @@
       height: 22px;
       border: 1px solid;
       border-radius: 22px;
-
       &::before {
         display: block;
         position: absolute;
@@ -494,7 +482,6 @@
         height: 2px;
         background: currentColor;
       }
-
       &::after {
         display: block;
         position: absolute;
@@ -507,16 +494,13 @@
       }
     }
   }
-
   button[aria-expanded='true'] {
     color: var(--green);
-
     .icon {
       &::after {
         width: 0;
       }
     }
-
     + .accordion-content {
       opacity: 1;
       max-height: 18em;
@@ -525,14 +509,12 @@
       overflow-y: auto;
     }
   }
-
   .accordion-content {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
-
     p {
       font-size: 1rem;
       font-weight: 300;
@@ -540,40 +522,6 @@
     }
   }
 }
-
-/* Media Query for Mobile Devices */
-@media (max-width: 600px) {
-  .faqContainerWrapper {
-    padding: 1rem;
-  }
-
-  button {
-    font-size: 14px;
-  }
-
-  .accordion-title {
-    font-size: 14px;
-  }
-
-  .icon {
-    top: 12px;
-    width: 18px;
-    height: 18px;
-
-    &::before {
-      top: 7px;
-      left: 4px;
-      width: 8px;
-    }
-
-    &::after {
-      top: 4px;
-      left: 7px;
-      height: 8px;
-    }
-  }
-}
-
 
 @media only screen and (max-width:1023px){
   .pkgCradExperienced {
@@ -667,7 +615,6 @@
   padding: 4px 6px;
   font-size: 11px;
 }
-
 }
 
 
