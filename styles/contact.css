@@ -108,7 +108,6 @@
     font-size: 16px;
     font-family: "montserrat", sans-serif;
     color: #004b91;
-
 }
 .contentWrapperForm p{
     margin-top: 4px;
@@ -154,7 +153,6 @@
 
 .inputFiledWrapper{
     margin-top: 20px;
- 
 }
 
 .inputWrapper{
@@ -180,6 +178,10 @@
     border-radius: 4px;
     border: 0.4px solid #ccc;
 }
+input:focus,
+textarea:focus {
+    outline: none;
+}
 .subjectFeild{
     margin-top: 20px;
 }
@@ -193,6 +195,12 @@
 }
 .textArea{
     margin-top: 20px;
+}
+input[type="text"],
+input[type="mail"],
+textarea {
+    font-size: 16px;
+    color: #000;
 }
 
 .textArea textarea{
@@ -217,7 +225,8 @@
     background-color:#ab7c05 ;
 }
 .textArea textarea{
-    color: #999797;
+    color: #1d1d1d;
+    font-size: 15px;
 }
 
 @media only screen and (max-width:965px){
