@@ -193,7 +193,7 @@ body{
 .subjectFeild label{
     font-weight: 500;
 }
-/* .inputs input{
+.inputs input{
     width: 100%;
     margin-top: 8px;
     height: 39px;
@@ -201,18 +201,10 @@ body{
     outline: none;
     border-radius: 4px;
     border: 0.4px solid #ccc;
-} */
+}
 input[type="date"] {
-    appearance: none; /* Remove default appearance */
-    -webkit-appearance: none;
-    -moz-appearance: none;
     min-width: 240px !important;
     height: 39px !important;
-    border: 1px solid #ccc; /* Add border for consistency */
-    padding: 8px; /* Add padding for better touch interaction */
-    font-size: 16px; /* Adjust font size */
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 .subjectFeild{
     margin-top: 20px;
