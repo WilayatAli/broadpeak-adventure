@@ -193,9 +193,9 @@ body{
     font-weight: 500;
 }
 .inputs input{
-    width: 100% !important;
+    width: 100%;
     margin-top: 8px;
-    height: 39px !important;
+    height: 39px;
     padding-inline: 10px;
     /* padding: 10px; */
     outline: none;
