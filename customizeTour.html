@@ -135,7 +135,7 @@
 
                                 <div class="inputWrapper">
                                     <div class="inputs">
-                                        <label for="country">Country of Residence </label>
+                                        <label for="residenceCountry">Country of Residence </label>
                                         <select name="country" class="country-control" id="residenceCountry">
                                             <option value="0" label="Select a country ... " selected="selected">Select a
                                                 country ... </option>
@@ -736,15 +736,15 @@
                                     <h4 class="margintb">ABOUT YOUR TOUR/Trekking</h4>
                                     <div class="inputWrapper">
                                         <div class="inputs">
-                                            <label for="number">Adults*</label><br>
+                                            <label for="adultNumber">Adults*</label><br>
                                             <input type="number" id="adultNumber" name="number" placeholder="0" required>
                                         </div>
                                         <div class="inputs">
-                                            <label for="number">Children (3 - 11 yrs) *</label><br>
-                                            <input type="number" id="childrenNumber" name="number" placeholder="0" required>
+                                            <label for="childrenNumber">Children (3 - 11 yrs) *</label><br>
+                                            <input type="number" id="childrenNumber" name="number" placeholder="0 required" required>
                                         </div>
                                         <div class="inputs">
-                                            <label for="number">Infants (0 - 1 yrs) *</label><br>
+                                            <label for="infantNumber">Infants (0 - 1 yrs) *</label><br>
                                             <input type="number" id="infantNumber" name="number" placeholder="0" required>
                                         </div>
                                     </div>
@@ -846,7 +846,7 @@
                                 </div>
                                 <div class="textArea" action="/action_page.php">
                                     <textarea id="w3review" name="w3review" rows="6"
-                                        cols="30">Other comments regarding your holiday (optional activities, extra nights, special needs or interests etc)......</textarea>
+                                        cols="30" placeholder="Other comments regarding your holiday (optional activities, extra nights, special needs or interests etc)..."></textarea>
                                     <br>
                                 </div>
                                 <button class="submitBtn" type="submit">Submit</button>
@@ -860,7 +860,7 @@
     <script src="script.js"></script>
     <script src="./javaScripts/mobileNav.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
+    <!-- <script>
         document.querySelector('.submitBtn').addEventListener('click', function (event) {
             event.preventDefault();
 
@@ -930,6 +930,88 @@
                 console.log("Error while sending email: ", e);
             }
         });
+    </script> -->
+
+    <script>
+        document.querySelector('.submitBtn').addEventListener('click', function (event) {
+            event.preventDefault();
+    
+            // Validation logic
+            const firstName = document.getElementById('fname').value.trim();
+            const lastName = document.getElementById('lname').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const residenceCountry = document.getElementById('residenceCountry').value.trim();
+            const passportCountry = document.getElementById('passportCountry').value.trim();
+            const adults = document.getElementById('adultNumber').value.trim();
+            const children = document.getElementById('childrenNumber').value.trim();
+            const infants = document.getElementById('infantNumber').value.trim();
+            const departureCity = document.getElementById('DepartureCity').value.trim();
+            const departureDate = document.getElementById('DepartureDate').value.trim();
+            const returnDate = document.getElementById('ReturnDate').value.trim();
+            const dateOfArrival = document.getElementById('DateOfArriva').value.trim();
+            const dateOfDeparture = document.getElementById('DateOfDeparture').value.trim();
+            const areaVisit = document.getElementById('areaVist').value.trim();
+            const tourAdventure = document.getElementById('TourAdventure').value.trim();
+            const hotelType = document.getElementById('hotelType').value.trim();
+            const preferredRoom = document.getElementById('PreferredRoom').value.trim();
+            const otherPreferences = document.getElementById('OtherPreferences').value.trim();
+            const comments = document.getElementById('w3review').value.trim();
+    
+            // Check if any required field is empty
+            if (!firstName || !lastName || !email || !residenceCountry || !passportCountry || !adults || !departureCity || !departureDate) {
+                alert("Please fill out all required fields.");
+                return;
+            }
+    
+            // Prepare data for sending email
+            const data = {
+                subject: "Customized Tour Request",
+                templateData: {
+                    subject: 'Customized Tour Request',
+                    template_id: 'd-c52d467021a3440aa40c2b4b10f2778a',
+                    firstName,
+                    lastName,
+                    email,
+                    residenceCountry,
+                    passportCountry,
+                    adults,
+                    children,
+                    infants,
+                    departureCity,
+                    departureDate,
+                    returnDate,
+                    dateOfArrival,
+                    dateOfDeparture,
+                    areaVisit,
+                    tourAdventure,
+                    preferredRoom,
+                    hotelType,
+                    otherPreferences,
+                    comments
+                }
+            };
+    
+            // Send the email
+            try {
+                fetch('https://broadpeak-backend.netlify.app/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data?.message);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            } catch (e) {
+                console.log("Error while sending email: ", e);
+            }
+        });
     </script>
+    
 
 </body>
