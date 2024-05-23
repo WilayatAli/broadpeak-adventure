@@ -206,6 +206,8 @@ input[type="date"] {
     appearance: none; /* Remove default appearance */
     -webkit-appearance: none;
     -moz-appearance: none;
+    min-width: 280px !important;
+    height: 39px !important;
     border: 1px solid #ccc; /* Add border for consistency */
     padding: 8px; /* Add padding for better touch interaction */
     font-size: 16px; /* Adjust font size */
