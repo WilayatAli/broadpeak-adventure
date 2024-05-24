@@ -528,6 +528,9 @@
    outline: none;
    outline-offset: none;
    touch-action: manipulation;
+   font-size: 1rem;
+   font-family: "poppins", sans-serif;
+   color: #000;
 }
 .searchTerm{
    touch-action: manipulation;
@@ -548,9 +551,7 @@
 }
 /* mediaQuery */
 /* @media only screen and (max-width: 1400px) {...} */
-@media only screen and (max-width: 1200px) {
 
-}
 @media only screen and (max-width: 992px) {
    .sliderOneSlogan{
       flex-wrap: wrap;
@@ -619,5 +620,18 @@
 .cardParagraph {
    font-size: 15px;
    line-height: 25.5px;
+}
+input[type="color"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+select:focus,
+textarea {
+font-size: 1rem !important;
 }
 }

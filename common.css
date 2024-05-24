@@ -787,10 +787,23 @@ input[type="search"]::-webkit-search-cancel-button {
     .chitralDistinationBanner {
         height: 45vh;
     }
+    input[type="color"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="text"],
+    select:focus,
+    textarea {
+    font-size: 1rem !important;
+    }
 }
 
-@media (min-width: 681px) { /* Adjust breakpoint as needed */
+@media (min-width: 681px) {
     .navList {
-      display: flex; /* Display as a flex container on larger screens */
+      display: flex;
     }
   }
