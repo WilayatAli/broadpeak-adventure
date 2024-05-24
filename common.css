@@ -392,6 +392,7 @@ p{
     display: none;
     /* Add any styling to make the navigation menu visible */
 }
+
 .footerTwo{
     width: 100%;
     max-width: 1160px;
@@ -605,7 +606,6 @@ input[type="search"]::-webkit-search-cancel-button {
         transform: scale(1);
     }
 }
-
 
 
 /* @media only screen and (max-width: 1400px) {...} */
