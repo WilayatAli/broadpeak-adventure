@@ -265,6 +265,7 @@
 
 .faqContainerWrapper {
   padding: 20px;
+  max-width: 60%;
 }
 
 h2 {
@@ -279,7 +280,7 @@ h2 {
 
 .faqPara {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .accordion {
@@ -293,7 +294,7 @@ h2 {
 
 .accordion-item button {
   width: 100%;
-  background-color: #fff;
+  background-color: #f7e2a37c;
   border: none;
   padding: 15px;
   text-align: left;
@@ -325,7 +326,114 @@ h2 {
   padding: 15px;
   margin: 0;
 }
+/* //////// */
+.faqContactWrapper{
+  width: 100%;
+  max-width: 30%;
+  padding-top: 20px;
+}
+.faqContact{
+ width: 100%;
+ max-width: 280px;
+ border-radius: 6px;
+ border: none;
+ background-color: #4d5974;
+ padding: 30px 20px;
+ margin-top: 20px;
+}
+.faqMoreinfo{
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 27px;
+  color: var(--drakblue);
+  margin-top: 10px;
+}
+.faqContentWrapper{
+  width: 100%;
+  max-width: 360px;
+  min-width: 263px;
+  padding: 30px 22px;
+  background-color: #f7e2a37c;
+  margin-top: 20px;
+  border-top-right-radius: 50px;
+  border-top: 3px solid #004b91;
+}
+.faqEmail{
+word-break: break-all !important;
+}
+.faqCell{
+  margin-top: 15px;
+}
+.faqCell p, .faqWarraperCommon p{
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid #f9556d;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--drakblue);
+}
+.faqPhoneNo img{
+  width: 18px;
+}
 
+.faqPhoneNo{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faqPhoneNo a{
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+.faqWarraperCommon{
+  margin-top: 30px;
+}
+
+.faqButton{
+  width: 100%;
+  max-width: 360px;
+}
+
+.faq-btn{
+  width: 100%;
+  height: 40px;
+  background-color: #004b91f5;
+  border: none;
+  font-family: "montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 21px;
+  cursor: pointer;
+  border-bottom: 1px solid #00AB33;
+  transition: all 0.4s ease;
+}
+.faq-btn:hover{
+  background-color: #00AB33;
+  color: #09233b;
+  font-weight: 600;
+  border-bottom: 1px solid #f9556d;
+} 
+
+
+@media only screen and (max-width: 862px) {
+  .faqSubContainer{
+    flex-direction: column;
+    gap: 60px;
+  }
+  .faqContainerWarrper{
+    width: 100%;
+  }
+  .faqContentWrapper{
+    max-width: 100%;
+  }
+  .faqContactWrapper{
+    max-width: 100%;
+  }
+}
 @media (max-width: 600px) {
   .faqContainerWrapper {
       padding: 10px;
@@ -338,5 +446,14 @@ h2 {
 
   .accordion-content p {
       padding: 10px;
+  }
+  .faqPara{
+    font-size: 16px;
+  }
+  .accordion-title{
+    font-size: 15px;
+  }
+  .faqBanner {
+    height: 150px;
   }
 }
