@@ -38,7 +38,7 @@
     gap: 20px;
 }
 /* faqstart */
-.faqContainerWarrper {
+/* .faqContainerWarrper {
     width: 60%;
   }
   .faqLine{
@@ -234,9 +234,9 @@
     color: #09233b;
     font-weight: 600;
     border-bottom: 1px solid #f9556d;
-}
+} */
 /* responsive */
-@media only screen and (max-width: 862px) {
+/* @media only screen and (max-width: 862px) {
   .faqSubContainer{
     flex-direction: column;
     gap: 60px;
@@ -260,5 +260,83 @@
   }
   .faqBanner {
     height: 150px;
+  }
+} */
+
+.faqContainerWrapper {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.faqLine {
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.faqPara {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-item button {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 15px;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item button .icon::before {
+  content: '+';
+  font-size: 20px;
+}
+
+.accordion-item button[aria-expanded="true"] .icon::before {
+  content: '-';
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+
+.accordion-content p {
+  padding: 15px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .faqContainerWrapper {
+      padding: 10px;
+  }
+
+  .accordion-item button {
+      padding: 10px;
+      font-size: 16px;
+  }
+
+  .accordion-content p {
+      padding: 10px;
   }
 }
