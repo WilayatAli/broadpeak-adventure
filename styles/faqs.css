@@ -424,11 +424,12 @@ word-break: break-all !important;
     flex-direction: column;
     gap: 60px;
   }
-  .faqContainerWarrper{
-    width: 100%;
+  .faqContainerWrapper{
+    max-width: 100% !important;
   }
   .faqContentWrapper{
     max-width: 100%;
+    width: 100%;
   }
   .faqContactWrapper{
     max-width: 100%;
@@ -456,4 +457,5 @@ word-break: break-all !important;
   .faqBanner {
     height: 150px;
   }
+
 }
