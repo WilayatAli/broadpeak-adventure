@@ -96,23 +96,48 @@ body{
     position: absolute;
 }
 .blog-image-1{
-    background-image: url(/assests/images/blogImages/blog-1.jpg);
+    background-image: url(/assests/pakageDetailIconAndImage/k2-base-camp-trekking.jpg);
 }
 .blog-image-2{
-    background-image: url(/assests/images/blogImages/blog-post-2.jpg);
+    background-image: url(/assests/images/blogImages/Baltoro-Glacier-blog.jpg);
 }
 .blog-image-3{
-    background-image: url(/assests/images/blogImages/blog-post-3.jpg);
+    background-image: url(/assests/images/distinationImages/skardu-8.jpeg);
 }
 .blog-image-4{
-    background-image: url(/assests/images/blogImages/blog-post-4.jpg)
+    background-image: url(/assests/images/blogImages/k2-broadPeak-Images.jpg.webp)
 }
 .blog-image-5{
-    background-image: url(/assests/images/blogImages/blog-post-5.jpg);
+    background-image: url(/assests/images/blogImages/comingSoon.avif);
 }
 .blog-image-6{
-    background-image: url(/assests/images/blogImages/blog-post-6.jpg);
+    background-image: url(/assests/images/blogImages/comingSoon.avif);
 }
+.blog-image-7{
+    background-image: url(/assests/images/blogImages/comingSoon.avif);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog-image-8{
+    background-image: url(/assests/images/blogImages/comingSoon.avif);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog-image-9{
+    background-image: url(/assests/images/blogImages/comingSoon.avif);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .blogCrad:hover .blog-image-1,
 .blogCrad:hover .blog-image-2,
@@ -139,6 +164,10 @@ body{
 }
 .blogCardHeading{
     text-decoration: none;
+    color: #776F5B;
+    transition: .5s;
+}
+.blogCardHeading a{
     color: #776F5B;
     transition: .5s;
 }
