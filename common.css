@@ -121,8 +121,9 @@ p{
     background:#00AB33;
     color: #fff;
     cursor: pointer;
+    outline: transparent;
     font-size: 14px;
-    font-size: 400;
+    font-weight: 400;
 }
 .headerBookNowBtn:hover{
     background-color: #028028;
@@ -286,8 +287,8 @@ p{
     justify-content: space-between;
  }
  .commonFooterHeaderStyle{
-    font-family: 'Roboto Slab', serif !important;
-    font-size: 18px;
+    font-family: "montserrat", sans-serif;
+    font-size: 17px;
     color: var(--blue);
     margin-bottom: 23px;
  }
@@ -474,7 +475,7 @@ p{
 }
 .Headings{
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 28px;
     color: var(--drakblue);
     font-family: "montserrat", sans-serif;

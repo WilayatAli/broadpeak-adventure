@@ -11,7 +11,7 @@
 }
 
 .contactbgImage{
-    background-image: url(/assests/guidBookImage/paskistanVisa-Image.jpg);
+    background-image: url(/assests/guidBookImage/paskistanVisa-Image.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +25,7 @@
     text-align: center;
     max-width: 500px;
     margin-inline: auto;
-    font-family: "Unbounded", sans-serif;
+    font-family: "montserrat", sans-serif;
     color: rgb(24, 150, 24);
     /* background-color: rgba(0, 0, 0, 0.23); */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);

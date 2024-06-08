@@ -10,6 +10,8 @@
     padding-inline: 20px;
     overflow-x: auto;
 }
+
+
 .pakagesCardContainer {
     margin-top: 40px;
     width: 100%;
@@ -17,6 +19,20 @@
     padding-inline: 0px !important; 
     margin-inline: auto;
     overflow: auto;
+}
+/* Custom scrollbar for WebKit browsers */
+.pakagesCardContainer::-webkit-scrollbar {
+    height: 6px; 
+}
+.pakagesCardContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.pakagesCardContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+.pakagesCardContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 .pakagesCardContainer {
     margin-top: 20px;

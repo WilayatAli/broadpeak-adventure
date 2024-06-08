@@ -1,0 +1,139 @@
+/* font-montserrat */
+@font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "montserrat", sans-serif;
+    src: url('../fonts/montserrat/Montserrat-ThinItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  /* font-Open-sans */
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url('/fonts/open-sans/OpenSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url('/fonts/open-sans/OpenSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url('/fonts/open-sans/OpenSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url('/fonts/open-sans/OpenSans-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+  /* font-roboto*/
+  @font-face {
+    font-family: "poppins", sans-serif;
+    src: url('/fonts/poppins/Poppins-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "poppins", sans-serif;
+    src: url('/fonts/poppins/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "poppins", sans-serif;
+    src: url('/fonts/poppins/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "poppins", sans-serif;
+    src: url('/fonts/poppins/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "poppins", sans-serif;
+    src: url('/fonts/poppins/Poppins-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "poppins", sans-serif;
+    src: url('/fonts/poppins/Poppins-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "poppins", sans-serif;
+    src: url('/fonts/poppins/Poppins-Italic.woff2') format('woff2');
+    font-style: italic;
+  }
+  /* The Lagez */
+  @font-face {
+    font-family: 'The Lagez';
+    src: url('/fonts/font-Lagez/TheLagez.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    letter-spacing: 2px;
+}
+/* Audiowide */
+@font-face {
+  font-family: "Audiowide";
+  src: url('/fonts/Audiowide-Regular/Audiowide-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}

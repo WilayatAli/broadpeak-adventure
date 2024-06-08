@@ -307,6 +307,9 @@
    animation: scale 2s ease-in-out;
    text-decoration: none;
 }
+.cardwrapper a{
+   text-decoration: none;
+}
 
 @keyframes scale{
    0%{
@@ -410,6 +413,9 @@
    margin-top: 15px;
    text-decoration: none;
    transition: 0.2s ease-in-out;
+}
+.card-Book-btns:focus {
+   outline: 0.5px solid #310479;
 }
 .card-Book-btns:hover{
    background-color: var(--blue);
@@ -587,7 +593,7 @@
 .partTwo {
    font-size: 26px;
    margin-top: 6px;
-   color: #ff8800;
+   color: #8b510e;
 }
 }
 @media only screen and (max-width: 576px) {

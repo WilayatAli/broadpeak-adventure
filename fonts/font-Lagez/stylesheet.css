@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'The Lagez';
+    src: url('TheLagez.eot');
+    src: local('The Lagez'), local('TheLagez'),
+        url('TheLagez.eot?#iefix') format('embedded-opentype'),
+        url('TheLagez.woff2') format('woff2'),
+        url('TheLagez.woff') format('woff'),
+        url('TheLagez.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
