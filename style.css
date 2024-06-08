@@ -580,13 +580,14 @@
    padding-top: 121px !important;
 }
 .sliderOneSlogan {
-   font-size: 34px;
-   line-height: 38px;
+   font-size: 26px;
+   line-height: 30px;
+   max-width: 280px;
 }
 .partTwo {
-   font-size: 35px;
+   font-size: 26px;
    margin-top: 6px;
-   color: #0e8b1e;
+   color: #ff8800;
 }
 }
 @media only screen and (max-width: 576px) {
